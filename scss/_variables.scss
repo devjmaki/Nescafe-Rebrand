@@ -1,0 +1,50 @@
+// google fonts
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@200;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&display=swap');
+
+// font-family variables
+$Bebas-Neue: 'Bebas Neue', cursive;
+$Kanit: 'Kanit', sans-serif;
+$Zen-Antique: 'Zen Antique', serif;
+$Island-Moments: 'Island Moments', cursive;
+
+// color variables
+$primary-color: #0a0908;
+$accent-color: #c6ac8f;
+$tertiary-color: #f0ab21;
+$light-color: #fefefe;
+$text-color-dark: #000;
+$text-color-light: #fff;
+
+// width variable
+$max-vw: 100vw;
+$half-vw: 50vw;
+
+// height variables
+$max-vh: 100vh;
+
+// margin variables
+$margin-ssm: 2rem;
+$margin-sm: 1.5rem;
+$margin-s: 1rem;
+$margin-xs: 0.5rem;
+$center: 0 auto;
+
+// font-size variables
+$font-size-ssm: 2rem; 
+
+// spacing variables
+$spacing-m: 5rem;
+$spacing-sm: 2.5rem;
+$spacing-ssm: 2rem;
+$spacing-s: 1rem;
+$spacing-xs: 0.5rem;
+
+// percentage variables
+$max-pc: 100%;
+$tquarter-pc: 75%;
+$half-pc: 50%;
+$quarter-pc: 25%;
+$min-pc: 1%;
