@@ -1,0 +1,81 @@
+@mixin bg-format{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin container{
+    width: $max-pc;
+    height: $max-pc;
+    display: flex;
+    font-family: $Kanit;
+    @include scroll-x();
+}
+
+@mixin md-container{
+    display: block;
+    font-family: $Kanit;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+@mixin flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flexc-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin flexc-space-between{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@mixin flexr-space-between{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@mixin hidden-xy{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+@mixin margin-icon{
+    margin: 1rem 1rem 0 0;
+}
+
+@mixin max-vw-vh {
+    width: $max-vw;
+    height: $max-vh;
+}
+
+@mixin scroll-x{
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+@mixin scroll-y{
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+@mixin theme{
+    background-color: $primary-color;
+    color: $text-color-light;
+}
+
+@mixin transform-bar1{
+    transform: translate(-$half-pc, -$half-pc) rotate(-45deg);
+}
+
+@mixin transform-bar2{
+    transform: translate(-$half-pc, -$half-pc) rotate(45deg);
+}
+
