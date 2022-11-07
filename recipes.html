@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Your Drink</title>
+
+    <link rel="shortcut icon" href="./img/gb.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/recipe.css">
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+    <nav>
+        <div class="sidebar">
+            <a href="nescafe-gb.html"><img class="navbar-brand d-block" src="./img/navbar-brand.png"/></a>
+            <div class="hamburger">
+                <div class="bar" id="bar1"></div>
+                <div class="bar" id="bar2"></div>
+            </div>   
+        </div>
+    </nav>
+    <nav class="menu">
+        <ul>
+            <li><a href="shop.html">Coffees</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </nav>   
+
+    <hr class="side-border border border-light opacity-75">
+
+    <div class="top-menu">
+        <div class="dropdown d-inline-block language">
+            <button class="btn btn-outline-light btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="d-inline-block language-selected">
+                    en-US
+                </div>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item fr" href="#">French</a></li>
+              <li><a class="dropdown-item en" href="#">English</a></li>
+              <li><a class="dropdown-item ja" href="#">Japanese</a></li>
+            </ul>
+        </div>
+
+        <hr class="top-border d-inline-block border border-light border-2 opacity-75">
+
+        <a class="d-inline-block" href="login.html">SIGN IN</a>
+
+        <hr class="top-border d-inline-block border border-light border-2 opacity-75">
+
+        <a href="#"><img class="d-inline-block top-icon navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" src="./img/bag.png"></a>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Shopping Cart</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="delivery">
+                    <p>Delivery:</p>
+                    <p>₱0</p>
+                </div>
+                <div class="total">
+                    <p>Total:</p>
+                    <p>₱ 0.00</p>
+                </div>
+                <button class="d-block btn btn-outline-dark" type="button">Checkout</button>
+                <button class="d-block btn btn-outline-dark" type="button">Continue shopping</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-container">
+
+        <section class="slide">
+            <img class="bg-recipe" src="./img/recipe-bg.jpg">
+            <div id="headingGrp" class="text-white">
+                <p class="fst-italic sec1-p">Coffee <span>Recipes</span></p>
+                <p class="fst-italic sec1-p">Coffee <span>Recipes</span></p>
+                <p class="fst-italic sec1-p">Coffee <span>Recipes</span></p>
+                <p class="fst-italic sec1-p">Coffee <span>Recipes</span></p>
+                <p class="fst-italic sec1-p">Coffee <span>Recipes</span></p>
+                <p class="fst-italic sec1-p">Coffee <span>Recipes</span></p> 
+                <p class="fst-italic sec1-p">Coffee <span>Recipes</span></p> 
+            </div>
+        </section>
+
+        <section class="slide">
+            <div class="overview text-center d-flex justify-content-sm-center flex-column">
+                <h2 class="recipe-overview">Share the taste of friendship.</h2> 
+                <p class="recipe-op">
+                    If you've been searching high and low for the best coffee recipes to make at home, you're in the right place. We've got something for everyone - hot coffee recipes for those cold, rainy, wintery days, iced coffee recipes for sweltering hot summer days, a relaxed, easy-to-drink coffee for a golden afternoon, or a strong, rich coffee for that early morning. 
+                </p>
+                <a href="shop.html"><button class="shop-btn d-block btn btn-outline-light" type="button">Shop Now</button></a>
+            </div>
+        </section>
+
+        <section id="recipe" class="slide">
+            <div class="re-container">
+                <img class="c1" src="./img/affogato.png">
+                <div class="recipe-label">
+                    <h3 class="c1-recipe">AFFOGATO</h3>
+                    <button class="view-btn d-block btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#c1Modal" type="button">View Recipe</button>
+ 
+                    <!-- Modal -->
+                    <div class="modal fade" id="c1Modal" tabindex="-1" aria-labelledby="recipeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header bg-secondary">
+                                    <img src="./img/close.png" class="close" data-bs-dismiss="modal" aria-label="Close"/>
+                                </div>
+                                <div class="modal-body bg-secondary">
+                                    <div class="container mt-2">
+                                        <h3 class="mb-3 c1-recipe">AFFOGATO (2)</h3>
+                                        <p class="text-dark c1-d">
+                                            Affogato means 'drowned' in Italian, which is because the ice cream is covered in an espresso shot. A true crowd pleaser that's easy to make!
+                                        </p>
+                                        <p class="text-dark c-time">Prep: 5 minutes.</p>
+                                        <ul class="nav nav-tabs">
+                                            <li class="nav-item">
+                                                <a class="nav-link active nav1" data-bs-toggle="tab" href="#ingredients">Ingredients</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link nav2" data-bs-toggle="tab" href="#required">Required</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link nav3" data-bs-toggle="tab" href="#steps">Steps</a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div class="tab-pane active" id="ingredients">
+                                                <div class="row border g-0 rounded shadow-sm">
+                                                    <div class="col p-4">
+                                                        <ul>
+                                                            <li class="text-dark c1-nav1-i1">2-3tsp NESCAFÉ AZERA Craft Coffee brewed with 200ml of freshly boiled water</li>
+                                                            <li class="text-dark c1-nav1-i2">2 scoops of vanilla ice cream (can be substituted for dairy free alternative) (Contains milk)</li>
+                                                            <li class="text-dark c1-nav1-i3">1 piece chocolate chopped or grated chocolate</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="required">
+                                                <div class="row border g-0 rounded shadow-sm">
+                                                    <div class="col p-4">
+                                                        <ul>
+                                                            <li class="text-dark c1-nav2-r1">Small knife</li>
+                                                            <li class="text-dark c1-nav2-r2">Ice cream scoop or spoon</li>
+                                                            <li class="text-dark nav-2glasses">2 glasses, to serve</li>
+                                                            <li class="text-dark fw-bold nav2-allergy">Allergens in this recipe: Milk</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="steps">
+                                                <div class="row border g-0 rounded shadow-sm">
+                                                    <div class="col p-4">
+                                                        <ol>
+                                                            <li class="text-dark c1-nav3-s1">In a chilled glass or dessert dish, place a scoop of vanilla ice cream.</li>
+                                                            <li class="text-dark c1-nav3-s2">Slowly pour the freshly brewed NESCAFÉ AZERA Craft Coffee over the ice cream.</li>
+                                                            <li class="text-dark c1-nav3-s3">Garnish with chopped chocolate and serve immediately.</li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="re-container">
+                <img class="c2" src="./img/cappuccino.png">
+                <div class="recipe-label">
+                    <h3 class="c2-recipe">CAPPUCCINO</h3>
+                    <button class="view-btn d-block btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#c2Modal" type="button">View Recipe</button>
+ 
+                    <!-- Modal -->
+                    <div class="modal fade" id="c2Modal" tabindex="-1" aria-labelledby="recipeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header bg-secondary">
+                                    <img src="./img/close.png" class="close" data-bs-dismiss="modal" aria-label="Close"/>
+                                </div>
+                                <div class="modal-body bg-secondary">
+                                    <div class="container mt-2">
+                                        <h3 class="mb-3 c2-recipe">CAPPUCCINO (1)</h3>
+                                        <p class="text-dark c2-d">
+                                            This simple, delicious recipe will have a cappuccino in your mug without a coffee machine, just the robust flavour of NESCAFÉ.
+                                        </p>
+                                        <p class="text-dark c-time">Prep: 5 minutes.</p>
+                                        <ul class="nav nav-tabs">
+                                            <li class="nav-item">
+                                                <a class="nav-link active nav1" data-bs-toggle="tab" href="#ingredients2">Ingredients</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link nav2" data-bs-toggle="tab" href="#required2">Required</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link nav3" data-bs-toggle="tab" href="#steps2">Steps</a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div class="tab-pane active" id="ingredients2">
+                                                <div class="row border g-0 rounded shadow-sm">
+                                                    <div class="col p-4">
+                                                        <ul>
+                                                            <li class="text-dark c2-nav1-i1">1-2 tsps (2-4g) NESCAFÉ Original</li>
+                                                            <li class="text-dark c2-nav1-i2">30ml (2 tbsps) freshly boiled water</li>
+                                                            <li class="text-dark c2-nav1-i3">190ml semi-skimmed milk</li>
+                                                            <li class="text-dark c2-nav1-i4">Nutmeg, cinnamon, or cocoa powder (optional)</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="required2">
+                                                <div class="row border g-0 rounded shadow-sm">
+                                                    <div class="col p-4">
+                                                        <ul>
+                                                            <li class="text-dark nav2-glassc">Glass container</li>
+                                                            <li class="text-dark nav2-milkfr">Milk frother</li>
+                                                            <li class="text-dark nav2-mug">Mug, to serve</li>
+                                                            <li class="text-dark fw-bold nav2-allergy">Allergens in this recipe: Milk</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="steps2">
+                                                <div class="row border g-0 rounded shadow-sm">
+                                                    <div class="col p-4">
+                                                        <ol>
+                                                            <li class="text-dark c2-nav3-s1">Mix the instant coffee and freshly boiled water. Stir it well and pour it into your mug of choice.</li>
+                                                            <li class="text-dark c2-nav3-s2">Heat the milk in a glass container for 1 minute in a microwave and give it a stir once it is warmed up.</li>
+                                                            <li class="text-dark c2-nav3-s3">Froth the hot milk for 2 minutes with a handheld frother. You are aiming for a foam layer that is 2 fingers thick,  35mm, to be precise.</li>
+                                                            <li class="text-dark c2-nav3-s4">Pour the frothed milk into the coffee.</li>
+                                                            <li class="text-dark c2-nav3-s5">Sprinkle with nutmeg, cinnamon, or cocoa, and serve immediately.</li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="re-container">
+                <img class="c3" src="./img/icedcmocha.png">
+                <div class="recipe-label">
+                    <h3 class="c3-recipe">ICED CAFE MOCHA</h3>
+                    <button class="view-btn d-block btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#c3Modal" type="button">View Recipe</button>
+ 
+                    <!-- Modal -->
+                    <div class="modal fade" id="c3Modal" tabindex="-1" aria-labelledby="recipeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header bg-secondary">
+                                    <img src="./img/close.png" class="close" data-bs-dismiss="modal" aria-label="Close"/>
+                                </div>
+                                <div class="modal-body bg-secondary">
+                                    <div class="container mt-2">
+                                        <h3 class="mb-3 c3-recipe">ICED CAFE MOCHA (2)</h3>
+                                        <p class="text-dark c3-d">
+                                            Create a wonderfully tasty drink with our iced cafe mocha recipe. Perfect for your morning coffee break or as an afternoon treat.
+                                        </p>
+                                        <p class="text-dark c-time">Prep: 5 minutes.</p>
+                                        <ul class="nav nav-tabs">
+                                            <li class="nav-item">
+                                                <a class="nav-link active nav1" data-bs-toggle="tab" href="#ingredients3">Ingredients</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link nav2" data-bs-toggle="tab" href="#required3">Required</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link nav3" data-bs-toggle="tab" href="#steps3">Steps</a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div class="tab-pane active" id="ingredients3">
+                                                <div class="row border g-0 rounded shadow-sm">
+                                                    <div class="col p-4">
+                                                        <ul>
+                                                            <li class="text-dark c3-nav1-i1">6tsp NESCAFÉ GOLD BLEND brewed with 200ml of freshly boiled water</li>
+                                                            <li class="text-dark c3-nav1-i2">200ml semi-skimmed milk or dairy-free alternative</li>
+                                                            <li class="text-dark c3-nav1-i3">50g white chocolate chopped or white chocolate buttons (contains milk)</li>
+                                                            <li class="text-dark c3-nav1-i4">2tbsp lightly whipped cream (optional)</li>
+                                                            <li class="text-dark c3-nav1-i5">Nutmeg</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="required3">
+                                                <div class="row border g-0 rounded shadow-sm">
+                                                    <div class="col p-4">
+                                                        <ul>
+                                                            <li class="text-dark nav2-milkfr">Milk frother</li>
+                                                            <li class="text-dark c3-nav2-r2">Heavy bottom pot</li>
+                                                            <li class="text-dark c3-nav2-r3">Whisk</li>
+                                                            <li class="text-dark c3-nav2-r4">Small grater</li>
+                                                            <li class="text-dark c3-nav2-r5">2 mugs, to serve</li>
+                                                            <li class="text-dark fw-bold nav2-allergy">Allergens in this recipe: Milk</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="steps3">
+                                                <div class="row border g-0 rounded shadow-sm">
+                                                    <div class="col p-4">
+                                                        <ol>
+                                                            <li class="text-dark c3-nav3-s1">Add the milk and the white chocolate chips to a heavy bottom pot. Whisk together, on medium-low heat, until the white chocolate has melted. </li>
+                                                            <li class="text-dark c3-nav3-s2">Add your freshly brewed NESCAFÉ GOLD BLEND to a cup or mug. Top up with the white chocolate milk and stir. </li>
+                                                            <li class="text-dark c3-nav3-s3">If using top with lightly whipped cream and freshly grate nutmeg over the top. </li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="re-container">
+                <img class="c4" src="./img/mocha-frappe.png">
+                <div class="recipe-label">
+                    <h3 class="c4-recipe">MOCHA FRAPPE</h3>
+                    <button class="view-btn d-block btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#c4Modal" type="button">View Recipe</button>
+ 
+                    <!-- Modal -->
+                    <div class="modal fade" id="c4Modal" tabindex="-1" aria-labelledby="recipeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header bg-secondary">
+                                    <img src="./img/close.png" class="close" data-bs-dismiss="modal" aria-label="Close"/>
+                                </div>
+                                <div class="modal-body bg-secondary">
+                                    <div class="container mt-2">
+                                        <h3 class="mb-3 c4-recipe">MOCHA FRAPPE (2)</h3>
+                                        <p class="text-dark c4-d">
+                                            There's nothing better than a cooling mocha frappé on a hot day, so why not make your own? You can even add a dollop of cream for a perfectly sweet taste. 
+                                        </p>
+                                        <p class="text-dark c-time">Prep: 5 minutes.</p>
+                                        <ul class="nav nav-tabs">
+                                            <li class="nav-item">
+                                                <a class="nav-link active nav1" data-bs-toggle="tab" href="#ingredients4">Ingredients</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link nav2" data-bs-toggle="tab" href="#required4">Required</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link nav3" data-bs-toggle="tab" href="#steps4">Steps</a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div class="tab-pane active" id="ingredients4">
+                                                <div class="row border g-0 rounded shadow-sm">
+                                                    <div class="col p-4">
+                                                        <ul>
+                                                            <li class="text-dark c4-nav1-i1">4-8tsp NESCAFÉ AZERA My Way Latte brewed with 400ml of freshly boiled water and left to cool</li>
+                                                            <li class="text-dark c4-nav1-i2">100ml semi-skimmed milk or dairy-free alternative</li>
+                                                            <li class="text-dark c4-nav1-i3">2tbsp sugar syrup (mix 2tbsp sugar with 1tbsp boiling water, bring to the boil and stir until dissolved)</li>
+                                                            <li class="text-dark c4-nav1-i4">2 handfuls ice cubes</li>
+                                                            <li class="text-dark c4-nav1-i5">2tbsp lightly whipped cream (optional)</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="required4">
+                                                <div class="row border g-0 rounded shadow-sm">
+                                                    <div class="col p-4">
+                                                        <ul>
+                                                            <li class="text-dark c4-nav2-r1">Blender</li>
+                                                            <li class="text-dark nav-2glasses">2 glasses, to serve</li>
+                                                            <li class="text-dark fw-bold nav2-allergy">Allergens in this recipe: Milk</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="steps4">
+                                                <div class="row border g-0 rounded shadow-sm">
+                                                    <div class="col p-4">
+                                                        <ol>
+                                                            <li class="text-dark c4-nav3-s1">Add all the ingredients apart from the cream to a blender.</li>
+                                                            <li class="text-dark c4-nav3-s2">Blend until foamy and the ice is broken down completely.</li>
+                                                            <li class="text-dark c4-nav3-s3">Pour into a glass and spoon over the lightly whipped cream if using.</li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="re-container">
+                <img class="c5" src="./img/mocha-mousse.png">
+                <div class="recipe-label">
+                    <h3 class="c5-recipe">MOCHA MOUSSE</h3>
+                    <button class="view-btn d-block btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#c5Modal" type="button">View Recipe</button>
+ 
+                    <!-- Modal -->
+                    <div class="modal fade" id="c5Modal" tabindex="-1" aria-labelledby="recipeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header bg-secondary">
+                                    <img src="./img/close.png" class="close" data-bs-dismiss="modal" aria-label="Close"/>
+                                </div>
+                                <div class="modal-body bg-secondary">
+                                    <div class="container mt-2">
+                                        <h3 class="mb-3 c5-recipe">MOCHA MOUSSE (1)</h3>
+                                        <p class="text-dark c5-d">
+                                            Stay cool! Our NESCAFÉ Mocha Mousse will refresh your body, mind, and soul.
+                                        </p>
+                                        <p class="text-dark c-time">Prep: 5 minutes.</p>
+                                        <ul class="nav nav-tabs">
+                                            <li class="nav-item">
+                                                <a class="nav-link active nav1" data-bs-toggle="tab" href="#ingredients5">Ingredients</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link nav2" data-bs-toggle="tab" href="#required5">Required</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link nav3" data-bs-toggle="tab" href="#steps5">Steps</a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div class="tab-pane active" id="ingredients5">
+                                                <div class="row border g-0 rounded shadow-sm">
+                                                    <div class="col p-4">
+                                                        <ul>
+                                                            <li class="text-dark c5-nav1-i1">1-2 tsps (2-4g) NESCAFÉ GOLD BLEND</li>
+                                                            <li class="text-dark c5-nav1-i2">30ml (2 tbsps) freshly boiled water</li>
+                                                            <li class="text-dark c5-nav1-i3">110ml cold semi-skimmed milk</li>
+                                                            <li class="text-dark c5-nav1-i4">7 medium ice cubes</li>
+                                                            <li class="text-dark c5-nav1-i5">2 tsps (10ml) brown sugar (optional)</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="required5">
+                                                <div class="row border g-0 rounded shadow-sm">
+                                                    <div class="col p-4">
+                                                        <ul>
+                                                            <li class="text-dark nav2-glassc">Glass container</li>
+                                                            <li class="text-dark fw-bold nav2-allergy">Allergens in this recipe: Milk</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="steps5">
+                                                <div class="row border g-0 rounded shadow-sm">
+                                                    <div class="col p-4">
+                                                        <ol>
+                                                            <li class="text-dark c5-nav3-s1">Mix the instant coffee with the hot water. Add the sugar, if you are using it. Stir it well and set it aside.</li>
+                                                            <li class="text-dark c5-nav3-s2">Fill a glass with ice cubes. </li>
+                                                            <li class="text-dark c5-nav3-s3">Slowly pour in the coffee.</li> 
+                                                            <li class="text-dark c5-nav3-s4">Slowly stream in the milk. </li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="re-container">
+                <img class="c6" src="./img/salted caramel latte.png">
+                <div class="recipe-label">
+                    <h3 class="c6-recipe">SALTED CARAMEL LATTE</h3>
+                    <button class="view-btn d-block btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#c6Modal" type="button">View Recipe</button>
+ 
+                    <!-- Modal -->
+                    <div class="modal fade" id="c6Modal" tabindex="-1" aria-labelledby="recipeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header bg-secondary">
+                                    <img src="./img/close.png" class="close" data-bs-dismiss="modal" aria-label="Close"/>
+                                </div>
+                                <div class="modal-body bg-secondary">
+                                    <div class="container mt-2">
+                                        <h3 class="mb-3 c6-recipe">SALTED CARAMEL LATTE (1)</h3>
+                                        <p class="text-dark c6-d">
+                                            An indulgently sweet drink with rich aromas of caramel, and the bold, invigorating flavours of NESCAFÉ.
+                                        </p>
+                                        <p class="text-dark c-time">Prep: 5 minutes.</p>
+                                        <ul class="nav nav-tabs">
+                                            <li class="nav-item">
+                                                <a class="nav-link active nav1" data-bs-toggle="tab" href="#ingredients6">Ingredients</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link nav2" data-bs-toggle="tab" href="#required6">Required</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link nav3" data-bs-toggle="tab" href="#steps6">Steps</a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div class="tab-pane active" id="ingredients6">
+                                                <div class="row border g-0 rounded shadow-sm">
+                                                    <div class="col p-4">
+                                                        <ul>
+                                                            <li class="text-dark c6-nav1-i1">1-2 tsps (2-4g) NESCAFÉ instant coffee</li>
+                                                            <li class="text-dark c6-nav1-i2">30ml (2 tbsps) freshly boiled water</li>
+                                                            <li class="text-dark c6-nav1-i3">130ml semi-skimmed milk</li>
+                                                            <li class="text-dark c6-nav1-i4">15ml sugar free caramel sauce</li>
+                                                            <li class="text-dark c6-nav1-i5">1 tbsp whipped cream (optional)</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="required6">
+                                                <div class="row border g-0 rounded shadow-sm">
+                                                    <div class="col p-4">
+                                                        <ul>
+                                                            <li class="text-dark nav2-glassc">Glass container</li>
+                                                            <li class="text-dark nav2-milkfr">Milk frother</li> <li class="text-dark nav2-mug">Mug, to serve</li>
+                                                            <li class="text-dark fw-bold nav2-allergy">Allergens in this recipe: Milk</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="steps6">
+                                                <div class="row border g-0 rounded shadow-sm">
+                                                    <div class="col p-4">
+                                                        <ol>
+                                                            <li class="text-dark c6-nav3-s1">Mix the instant coffee with the hot water. Stir it well and set it aside.</li>
+                                                            <li class="text-dark c6-nav3-s2">Combine the milk and caramel sauce in a glass container. Heat it for 1 minute in a microwave, until bubbles just appear. Give it a stir to mix it properly. </li>
+                                                            <li class="text-dark c6-nav3-s3">Add the coffee brew to the caramel milk. Froth it for 30 seconds with a handheld frother to get the perfect velvety texture.</li> 
+                                                            <li class="text-dark c6-nav3-s4">Pour the Salted Caramel Latte into your cup. </li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </section>
+
+        <section class="slide">
+            <div class="faq-container">
+                <h3 class="text-center text-light d-block r-faq">Frequently Asked Questions</h3> 
+                    <div class="d-block accordion accordion-flush" id="accordionFAQ">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionCollapseOne" aria-expanded="false" aria-controls="accordionCollapseOne">
+                                How do you make really good coffee?
+                                </button>
+                            </h2>
+                            <div id="accordionCollapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body a1">
+                                    With NESCAFÉ it's easy. Take a look through our list of easy, at-home coffee recipes, give them a try, and you'll be on your way to finding your favourite way to enjoy NESCAFÉ. It's all about personal taste, and your new favourite might be waiting to be discovered. Give it a try and taste for yourself. 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionCollapseTwo" aria-expanded="false" aria-controls="accordionCollapseTwo">
+                                What are good coffee-based drinks to make at home?
+                                </button>
+                            </h2>
+                            <div id="accordionCollapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body a2">
+                                    There are so many coffee recipes to try making at home. You could try making a simple instant cappuccino, a caramel latte, or even a quick iced coffee to get yourself comfortable. Your new favourite coffee recipe is waiting for you to try it.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionCollapseThree" aria-expanded="false" aria-controls="accordionCollapseThree">
+                                What can I put in my coffee?
+                                </button>
+                            </h2>
+                            <div id="accordionCollapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body a3">
+                                        It is all about personal taste. You can add milk, or a plant-based alternative like oat drink to soften the bold flavours slightly. Since coffee is such a versatile drink, it works well with a lot of different flavours, so why not add a little sugar-free flavoured syrup to your coffee? Experiment with your favourite flavours and find out what works best for you.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+
+        <section class="slide">
+            <div class="last-container">
+                <footer class="text-justify">
+                    <div class="row align-items-center">
+                        <div class="col-12">
+                            <h3 class="footer-title d-block text-center">Like what you see? Come, sip with us!</h3>
+                            <a href="contact.html"><button class="contact-btn d-block btn btn-outline-light text-center">Let's talk</button></a>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-md-4">
+                            <div class="container">
+                                <a href="nescafe-gb.html"><img class="d-block" id="logo" src="./img/footer-logo.png"/></a>
+                                <a href="https://www.facebook.com/nescafe.ph" target="_blank"><img class="alt fb" src="./img/fb.png"/></a>
+                                <a href="https://twitter.com/nescafegolduki" target="_blank"><img class="alt twt" src="./img/twt.png"/></a>
+                                <a href="https://www.instagram.com/nescafe/" target="_blank"><img class="alt ig" src="./img/instagram.png"/></a>
+                                <a href="https://www.youtube.com/user/UKNescafe" target="_blank"><img class="alt yt" src="./img/youtube.png"/></a>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <ul>
+                                <li><a class="home-menu" href="nescafe-gb.html">HOME</a></li>
+                                <li><a class="shop-menu" href="shop.html">COFFEES</a></li>
+                                <li><a class="recipe-menu" href="recipes.html">RECIPES</a></li>
+                                <li><a class="about-menu" href="about-us.html">ABOUT</a></li>
+                                <li><a class="contact-menu" href="contact.html">CONTACT</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-5">
+                            <form action="">
+                                <label for="emailAdd" class="newsletter fw-bold">NEWSLETTER</label>
+                                <input type="text" class="form-control mt-3 mb-3" id="emailAdd" placeholder="Email Address">
+                                <p>
+                                    <button class="sub-btn btn btn-warning">SUBSCRIBE</button>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </div>
+  
+    <script src="./javascript/app.js"></script>
+    <script src="./javascript/menu.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
+    <script type="module" defer src="./javascript/kursor.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+    <script src="./javascript/multi-lang.js"></script>
+
+    <!-- bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
