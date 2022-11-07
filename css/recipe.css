@@ -1,0 +1,458 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@200;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Island+Moments&display=swap");
+.recipe-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font-family: "Kanit", sans-serif;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.recipe-container section {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.recipe-container section:nth-of-type(1) {
+  background-color: #0a0908;
+  color: #fff;
+  width: 100vw;
+  height: 100vh;
+}
+.recipe-container section:nth-of-type(1) .bg-recipe {
+  position: relative;
+  top: 2%;
+  left: 7%;
+  width: 55vw;
+  height: auto;
+}
+.recipe-container section:nth-of-type(1) #headingGrp {
+  position: relative;
+  margin-right: 5rem;
+  right: 4%;
+  top: 6%;
+}
+.recipe-container section:nth-of-type(1) p {
+  font-size: 4vw;
+  font-family: "Zen Antique", serif;
+  opacity: 0.5;
+}
+.recipe-container section:nth-of-type(1) span {
+  color: #f0ab21;
+}
+.recipe-container section:nth-of-type(2) {
+  background-color: #0a0908;
+  color: #fff;
+  width: 50vw;
+  height: 100vh;
+}
+.recipe-container section:nth-of-type(2) .overview {
+  width: 80%;
+  height: 70%;
+}
+.recipe-container section:nth-of-type(2) .overview h2, .recipe-container section:nth-of-type(2) .overview h3 {
+  text-transform: uppercase;
+  font-family: "Zen Antique", serif;
+  font-size: 2.4vw;
+}
+.recipe-container section:nth-of-type(2) .overview p {
+  color: #c6ac8f;
+  margin: 2.5rem 0;
+  text-transform: uppercase;
+  font-size: 1.2vw;
+}
+.recipe-container section:nth-of-type(2) .overview button {
+  position: relative;
+  width: 40%;
+  left: 30%;
+}
+.recipe-container section:nth-of-type(2) .overview a {
+  text-decoration: none;
+}
+.recipe-container section:nth-of-type(3) {
+  background-color: #0a0908;
+  color: #fff;
+  width: 190vw;
+  height: 100vh;
+}
+.recipe-container section:nth-of-type(3) .re-container {
+  width: 300px;
+  height: auto;
+  position: relative;
+}
+.recipe-container section:nth-of-type(3) .re-container:nth-of-type(1) {
+  top: 9%;
+  right: 8%;
+}
+.recipe-container section:nth-of-type(3) .re-container:nth-of-type(2) {
+  top: 14%;
+  right: 2%;
+}
+.recipe-container section:nth-of-type(3) .re-container:nth-of-type(3) {
+  top: 1%;
+}
+.recipe-container section:nth-of-type(3) .re-container:nth-of-type(4) {
+  left: 4%;
+}
+.recipe-container section:nth-of-type(3) .re-container:nth-of-type(5) {
+  top: 14%;
+  left: 7%;
+}
+.recipe-container section:nth-of-type(3) .re-container:nth-of-type(6) {
+  top: 12%;
+  left: 10%;
+}
+.recipe-container section:nth-of-type(3) .re-container .c1 {
+  width: 70%;
+  margin-left: 2rem;
+}
+.recipe-container section:nth-of-type(3) .re-container .c2 {
+  width: 90%;
+}
+.recipe-container section:nth-of-type(3) .re-container .c3 {
+  width: 80%;
+}
+.recipe-container section:nth-of-type(3) .re-container .c4 {
+  width: 70%;
+  margin-left: 2rem;
+}
+.recipe-container section:nth-of-type(3) .re-container .c5 {
+  width: 65%;
+  margin-left: 2.2rem;
+}
+.recipe-container section:nth-of-type(3) .re-container .c6 {
+  width: 95%;
+}
+.recipe-container section:nth-of-type(3) .re-container .recipe-label {
+  width: 95%;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recipe-container section:nth-of-type(3) .re-container .recipe-label h3 {
+  font-size: 1.9vw;
+}
+.recipe-container section:nth-of-type(3) .re-container .recipe-label button {
+  width: 50%;
+}
+.recipe-container section:nth-of-type(3) .re-container .recipe-label .close {
+  position: relative;
+  width: 2%;
+  left: 95%;
+}
+.recipe-container section:nth-of-type(3) .re-container .recipe-label .nav-link {
+  color: #0a0908;
+}
+.recipe-container section:nth-of-type(4) {
+  background-color: #0a0908;
+  color: #fff;
+  width: 60vw;
+  height: 100vh;
+}
+.recipe-container section:nth-of-type(4) h3 {
+  font-size: 3vw;
+  margin-bottom: 2rem;
+}
+.recipe-container section:nth-of-type(5) {
+  background-color: #0a0908;
+  color: #fff;
+  width: 100vw;
+  height: 100vh;
+}
+
+@media screen and (min-width: 424px) and (max-width: 767px) {
+  .recipe-container {
+    display: block;
+    font-family: "Kanit", sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .recipe-container section {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+  }
+  .recipe-container section:nth-of-type(1) {
+    width: 100%;
+    height: 100%;
+  }
+  .recipe-container section:nth-of-type(1) p {
+    font-size: 3.7vw;
+  }
+  .recipe-container section:nth-of-type(2) {
+    width: 100%;
+    height: 80%;
+  }
+  .recipe-container section:nth-of-type(2) .overview {
+    width: 70%;
+  }
+  .recipe-container section:nth-of-type(2) .overview h2, .recipe-container section:nth-of-type(2) .overview h3 {
+    font-size: 4vw;
+  }
+  .recipe-container section:nth-of-type(2) .overview p {
+    font-size: 2.6vw;
+  }
+  .recipe-container section:nth-of-type(3) {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    font-family: "Kanit", sans-serif;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  .recipe-container section:nth-of-type(3) .re-container:nth-of-type(1) {
+    top: 9%;
+    left: 4%;
+  }
+  .recipe-container section:nth-of-type(3) .re-container:nth-of-type(2) {
+    top: 12.9%;
+    left: 15%;
+  }
+  .recipe-container section:nth-of-type(3) .re-container:nth-of-type(3) {
+    top: 7%;
+    left: 25%;
+  }
+  .recipe-container section:nth-of-type(3) .re-container:nth-of-type(4) {
+    top: 6.5%;
+    left: 33%;
+  }
+  .recipe-container section:nth-of-type(3) .re-container:nth-of-type(5) {
+    top: 13.5%;
+    left: 39%;
+  }
+  .recipe-container section:nth-of-type(3) .re-container:nth-of-type(6) {
+    top: 12.5%;
+    left: 46%;
+  }
+  .recipe-container section:nth-of-type(3) .re-container .c1 {
+    width: 85%;
+    margin-left: 1rem;
+  }
+  .recipe-container section:nth-of-type(3) .re-container .c2 {
+    width: 95%;
+  }
+  .recipe-container section:nth-of-type(3) .re-container .c3 {
+    width: 80%;
+    margin-left: 0.5rem;
+  }
+  .recipe-container section:nth-of-type(3) .re-container .c4 {
+    width: 70%;
+    margin-left: -0.1rem;
+  }
+  .recipe-container section:nth-of-type(3) .re-container .c5 {
+    width: 65%;
+    margin-left: 1rem;
+  }
+  .recipe-container section:nth-of-type(3) .re-container .c6 {
+    width: 95%;
+    margin-right: 4rem;
+  }
+  .recipe-container section:nth-of-type(3) .re-container .recipe-label {
+    width: 100%;
+  }
+  .recipe-container section:nth-of-type(3) .re-container .recipe-label h3 {
+    font-size: 1.4vw;
+  }
+  .recipe-container section:nth-of-type(3) .re-container .recipe-label button {
+    width: 100%;
+    font-size: 2.2vw;
+  }
+  .recipe-container section:nth-of-type(3) .re-container .recipe-label .close {
+    position: relative;
+    width: 3%;
+    left: 95%;
+  }
+  .recipe-container section:nth-of-type(3) .re-container .recipe-label .nav-link {
+    color: #0a0908;
+  }
+  .recipe-container section:nth-of-type(4) {
+    width: 100%;
+    height: 85%;
+  }
+  .recipe-container section:nth-of-type(5) {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .recipe-container {
+    display: block;
+    font-family: "Kanit", sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .recipe-container section {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+  }
+  .recipe-container section:nth-of-type(1) {
+    width: 100%;
+    height: 100%;
+  }
+  .recipe-container section:nth-of-type(2) {
+    width: 100%;
+    height: 100%;
+  }
+  .recipe-container section:nth-of-type(2) .overview {
+    width: 70%;
+  }
+  .recipe-container section:nth-of-type(2) .overview h2, .recipe-container section:nth-of-type(2) .overview h3 {
+    font-size: 4vw;
+  }
+  .recipe-container section:nth-of-type(2) .overview p {
+    font-size: 2vw;
+  }
+  .recipe-container section:nth-of-type(3) {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    font-family: "Kanit", sans-serif;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  .recipe-container section:nth-of-type(3) .re-container:nth-of-type(1) {
+    top: 9%;
+    left: 4%;
+  }
+  .recipe-container section:nth-of-type(3) .re-container:nth-of-type(2) {
+    top: 13.2%;
+    left: 7%;
+  }
+  .recipe-container section:nth-of-type(3) .re-container:nth-of-type(3) {
+    top: 4%;
+    left: 10%;
+  }
+  .recipe-container section:nth-of-type(3) .re-container:nth-of-type(4) {
+    top: 3%;
+    left: 13%;
+  }
+  .recipe-container section:nth-of-type(3) .re-container:nth-of-type(5) {
+    top: 14%;
+    left: 16%;
+  }
+  .recipe-container section:nth-of-type(3) .re-container:nth-of-type(6) {
+    top: 12.5%;
+    left: 19%;
+  }
+  .recipe-container section:nth-of-type(3) .re-container .c1 {
+    width: 75%;
+    margin-left: 1rem;
+  }
+  .recipe-container section:nth-of-type(3) .re-container .c2 {
+    width: 95%;
+  }
+  .recipe-container section:nth-of-type(3) .re-container .c3 {
+    width: 80%;
+    margin-left: 0.5rem;
+  }
+  .recipe-container section:nth-of-type(3) .re-container .c4 {
+    width: 70%;
+  }
+  .recipe-container section:nth-of-type(3) .re-container .c5 {
+    width: 65%;
+    margin-left: 1rem;
+  }
+  .recipe-container section:nth-of-type(3) .re-container .c6 {
+    width: 95%;
+    margin-right: 4rem;
+  }
+  .recipe-container section:nth-of-type(3) .re-container .recipe-label {
+    width: 100%;
+  }
+  .recipe-container section:nth-of-type(3) .re-container .recipe-label h3 {
+    font-size: 1.4vw;
+  }
+  .recipe-container section:nth-of-type(3) .re-container .recipe-label button {
+    width: 100%;
+  }
+  .recipe-container section:nth-of-type(3) .re-container .recipe-label .close {
+    position: relative;
+    width: 3%;
+    left: 95%;
+  }
+  .recipe-container section:nth-of-type(3) .re-container .recipe-label .nav-link {
+    color: #0a0908;
+  }
+  .recipe-container section:nth-of-type(4) {
+    width: 100%;
+    height: 85%;
+  }
+  .recipe-container section:nth-of-type(5) {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .recipe-container section:nth-of-type(2) .overview p {
+    font-size: 1.7vw;
+  }
+  .recipe-container section:nth-of-type(3) .re-container {
+    width: 250px;
+  }
+  .recipe-container section:nth-of-type(3) .re-container:nth-of-type(1) {
+    top: 9%;
+    right: 10%;
+  }
+  .recipe-container section:nth-of-type(3) .re-container:nth-of-type(2) {
+    top: 13.2%;
+    right: 6%;
+  }
+  .recipe-container section:nth-of-type(3) .re-container:nth-of-type(3) {
+    top: 4%;
+    right: 1%;
+  }
+  .recipe-container section:nth-of-type(3) .re-container:nth-of-type(4) {
+    top: 3%;
+    left: 2%;
+  }
+  .recipe-container section:nth-of-type(3) .re-container:nth-of-type(5) {
+    top: 14%;
+    left: 6%;
+  }
+  .recipe-container section:nth-of-type(3) .re-container:nth-of-type(6) {
+    top: 12.5%;
+    left: 10%;
+  }
+  .recipe-container section:nth-of-type(3) .re-container .recipe-label h3 {
+    font-size: 1.5vw;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .recipe-container section:nth-of-type(2) .overview p {
+    font-size: 1.7vw;
+  }
+  .recipe-container section:nth-of-type(3) .re-container:nth-of-type(1) {
+    top: 9%;
+    right: 10%;
+  }
+  .recipe-container section:nth-of-type(3) .re-container:nth-of-type(2) {
+    top: 13.2%;
+    right: 6%;
+  }
+  .recipe-container section:nth-of-type(3) .re-container:nth-of-type(3) {
+    top: 4%;
+    right: 1%;
+  }
+  .recipe-container section:nth-of-type(3) .re-container:nth-of-type(4) {
+    top: 3%;
+    left: 2%;
+  }
+  .recipe-container section:nth-of-type(3) .re-container:nth-of-type(5) {
+    top: 14%;
+    left: 6%;
+  }
+  .recipe-container section:nth-of-type(3) .re-container:nth-of-type(6) {
+    top: 12.5%;
+    left: 10%;
+  }
+  .recipe-container section:nth-of-type(3) .re-container .recipe-label h3 {
+    font-size: 1.5vw;
+  }
+}/*# sourceMappingURL=recipe.css.map */

@@ -1,0 +1,600 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@200;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Island+Moments&display=swap");
+.main-container {
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font-family: "Kanit", sans-serif;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.main-container section {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-container section:nth-of-type(1) {
+  background: url("../img/bg1.jpg");
+  color: #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+.main-container section:nth-of-type(1) .greet {
+  position: relative;
+  top: 26%;
+  left: 7%;
+  width: 90%;
+}
+.main-container section:nth-of-type(1) .greet h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 8vw;
+}
+.main-container section:nth-of-type(1) .greet p {
+  font-family: "Kanit", sans-serif;
+  font-size: 4vw;
+}
+.main-container section:nth-of-type(1) .greet h1, .main-container section:nth-of-type(1) .greet p {
+  color: #fff;
+  line-height: 5rem;
+  z-index: 0;
+}
+.main-container section:nth-of-type(1) .greet .find-more {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.main-container section:nth-of-type(1) .greet .find-more:visited {
+  color: #0a0908;
+}
+.main-container section:nth-of-type(1) .greet .find-more:hover {
+  color: #000;
+}
+.main-container section:nth-of-type(1) .greet .direction {
+  width: 18%;
+  border: 3px solid #fefefe;
+  border-radius: 0 0 20px 0;
+}
+.main-container section:nth-of-type(1) .greet .direction:hover {
+  background-color: #f0ab21;
+  color: #000;
+}
+.main-container section:nth-of-type(1) .right {
+  position: relative;
+  width: 40px;
+  right: 1%;
+  height: auto;
+  opacity: 0.7;
+  animation: slideRight 0.9s infinite ease-in;
+}
+.main-container section:nth-of-type(1) .right:hover {
+  opacity: 1;
+}
+@keyframes slideRight {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(40%);
+  }
+}
+.main-container section:nth-of-type(1) .down {
+  position: relative;
+  width: 40px;
+  top: 270px;
+  right: 30px;
+  height: auto;
+  opacity: 0;
+  animation: slideDown 0.9s infinite ease-in;
+}
+@keyframes slideDown {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(40%);
+  }
+}
+.main-container section:nth-of-type(2) {
+  background-color: #0a0908;
+  color: #fff;
+  width: 70vw;
+  height: 100vh;
+}
+.main-container section:nth-of-type(2) .overview {
+  width: 80%;
+  height: 70%;
+}
+.main-container section:nth-of-type(2) .overview h2, .main-container section:nth-of-type(2) .overview h3 {
+  text-transform: uppercase;
+  font-family: "Zen Antique", serif;
+  font-size: 2.4vw;
+}
+.main-container section:nth-of-type(2) .overview p {
+  color: #c6ac8f;
+  margin: 2.5rem 0;
+  text-transform: uppercase;
+  font-size: 1.2vw;
+}
+.main-container section:nth-of-type(2) .overview button {
+  position: relative;
+  width: 30%;
+  left: 33%;
+}
+.main-container section:nth-of-type(2) .overview a {
+  text-decoration: none;
+}
+.main-container section:nth-of-type(3) {
+  background-color: #0a0908;
+  color: #fff;
+  width: 80vw;
+  height: 100vh;
+}
+.main-container section:nth-of-type(3) img {
+  position: relative;
+  left: 9%;
+  bottom: 2%;
+  width: 77vw;
+  height: auto;
+}
+.main-container section:nth-of-type(3) p {
+  position: relative;
+  right: 83%;
+  top: 22%;
+  font-size: 4vw;
+  font-family: "Zen Antique", serif;
+  z-index: 1;
+}
+.main-container section:nth-of-type(4) {
+  background-color: #0a0908;
+  color: #fff;
+  width: 120vw;
+  height: 100vh;
+}
+.main-container section:nth-of-type(4) #brand1 {
+  position: relative;
+  bottom: 10%;
+  left: 25%;
+  font-size: 10vw;
+  font-family: "Kanit", sans-serif;
+  color: #fff;
+  transform: rotate(90deg);
+}
+.main-container section:nth-of-type(4) #brand2 {
+  position: relative;
+  top: 30%;
+  left: 6%;
+  font-size: 8vw;
+  font-family: "Kanit", sans-serif;
+  color: #f0ab21;
+  transform: rotate(-90deg);
+}
+.main-container section:nth-of-type(4) #brand3 {
+  position: relative;
+  bottom: 11%;
+  right: 12.5%;
+  font-size: 8vw;
+  color: #fff;
+  transform: rotate(-90deg);
+}
+.main-container section:nth-of-type(4) .tin > img {
+  width: 450px;
+  height: auto;
+}
+.main-container section:nth-of-type(4) .t1 {
+  position: relative;
+  right: 18%;
+}
+.main-container section:nth-of-type(4) .t2 {
+  position: relative;
+  right: 26%;
+}
+.main-container section:nth-of-type(4) .t3 {
+  position: relative;
+  right: 33%;
+}
+.main-container section:nth-of-type(4) .description {
+  width: 70%;
+  margin-left: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-container section:nth-of-type(4) button {
+  width: 100%;
+}
+.main-container section:nth-of-type(4) a {
+  text-decoration: none;
+}
+.main-container section:nth-of-type(5) {
+  background-color: #0a0908;
+  color: #fff;
+  width: 50vw;
+  height: 100vh;
+}
+.main-container section:nth-of-type(5) .recipes {
+  width: 70%;
+  height: 60%;
+  margin-right: 4rem;
+}
+.main-container section:nth-of-type(5) .recipes span {
+  font-family: "Island Moments", cursive;
+  font-size: 7vw;
+  display: block;
+}
+.main-container section:nth-of-type(5) .recipes .recipe-title {
+  font-family: "Zen Antique", serif;
+  font-size: 3vw;
+  line-height: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+.main-container section:nth-of-type(5) .recipes .recipe-sub {
+  font-size: 2vw;
+  margin-bottom: 3rem;
+}
+.main-container section:nth-of-type(5) .recipes .recipe-p {
+  text-transform: uppercase;
+  color: #c6ac8f;
+  margin-bottom: 4rem;
+}
+.main-container section:nth-of-type(5) .recipes button {
+  margin-left: 26%;
+  width: 50%;
+  border: 3px solid #fefefe;
+  border-radius: 0 0 20px 0;
+}
+.main-container section:nth-of-type(5) .recipes button:hover {
+  background-color: #f0ab21;
+  color: #000;
+}
+.main-container section:nth-of-type(5) .recipes a {
+  text-decoration: none;
+}
+.main-container section:nth-of-type(6) {
+  background-color: #0a0908;
+  color: #fff;
+  width: 90vw;
+  height: 100vh;
+}
+.main-container section:nth-of-type(6) video {
+  margin-left: 6%;
+  width: 1100px;
+  height: auto;
+}
+.main-container section:nth-of-type(6) .circle {
+  right: 48%;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-container section:nth-of-type(6) #playBtn {
+  position: relative;
+  right: 51%;
+  width: 70px;
+  height: auto;
+}
+.main-container section:nth-of-type(6) #playBtn, .main-container section:nth-of-type(6) .text {
+  position: relative;
+  color: #fff;
+  font-size: 18px;
+  animation: Rotation 20s linear infinite;
+}
+@keyframes Rotation {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.main-container section:nth-of-type(6) .circle .text span {
+  position: absolute;
+  top: -100px;
+  text-transform: uppercase;
+  display: inline-block;
+  transform-origin: 0 90px;
+}
+.main-container section:nth-of-type(7) {
+  background-color: #0a0908;
+  color: #fff;
+  width: 100vw;
+  height: 100vh;
+}
+
+@media screen and (min-width: 424px) and (max-width: 767px) {
+  .main-container {
+    display: block;
+    font-family: "Kanit", sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .main-container section {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+  }
+  .main-container section:nth-of-type(1) {
+    width: 100%;
+    height: 100%;
+  }
+  .main-container section:nth-of-type(1) .greet {
+    top: 23%;
+    width: 100%;
+  }
+  .main-container section:nth-of-type(1) .greet h1 {
+    font-size: 10vw;
+  }
+  .main-container section:nth-of-type(1) .greet p {
+    font-size: 5vw;
+  }
+  .main-container section:nth-of-type(1) .greet h1, .main-container section:nth-of-type(1) .greet p {
+    line-height: 2.5rem;
+  }
+  .main-container section:nth-of-type(1) .greet .direction {
+    width: 43%;
+  }
+  .main-container section:nth-of-type(1) .right {
+    opacity: 0;
+  }
+  .main-container section:nth-of-type(1) .down {
+    top: 190px;
+    opacity: 0.7;
+  }
+  .main-container section:nth-of-type(2) {
+    width: 100%;
+    height: 80%;
+  }
+  .main-container section:nth-of-type(2) .overview {
+    width: 70%;
+  }
+  .main-container section:nth-of-type(2) .overview h2, .main-container section:nth-of-type(2) .overview h3 {
+    font-size: 3vw;
+  }
+  .main-container section:nth-of-type(2) .overview p {
+    font-size: 2.5vw;
+  }
+  .main-container section:nth-of-type(2) .overview button {
+    font-size: 2.5vw;
+  }
+  .main-container section:nth-of-type(3) {
+    width: 100%;
+    height: 70%;
+  }
+  .main-container section:nth-of-type(3) img {
+    left: 13%;
+  }
+  .main-container section:nth-of-type(3) p {
+    right: 66%;
+  }
+  .main-container section:nth-of-type(4) {
+    overflow-x: scroll;
+    width: 100%;
+    height: 80%;
+  }
+  .main-container section:nth-of-type(4) #brand1 {
+    left: 65%;
+    font-size: 8vw;
+  }
+  .main-container section:nth-of-type(4) #brand2 {
+    left: 47%;
+    top: 15%;
+    font-size: 6vw;
+  }
+  .main-container section:nth-of-type(4) #brand3 {
+    left: 30.5%;
+    bottom: 3%;
+    font-size: 6vw;
+  }
+  .main-container section:nth-of-type(4) .tin > img {
+    width: 270px;
+  }
+  .main-container section:nth-of-type(4) .t1 {
+    left: 25%;
+  }
+  .main-container section:nth-of-type(4) .t2 {
+    left: 8%;
+  }
+  .main-container section:nth-of-type(4) .t3 {
+    right: 5%;
+  }
+  .main-container section:nth-of-type(4) .description > h3 {
+    font-size: 2.1vw;
+  }
+  .main-container section:nth-of-type(4) a > button {
+    font-size: 2.1vw;
+  }
+  .main-container section:nth-of-type(5) {
+    width: 100%;
+    height: 90%;
+  }
+  .main-container section:nth-of-type(5) .recipes {
+    width: 65%;
+    margin-left: 4rem;
+  }
+  .main-container section:nth-of-type(5) .recipes .recipe-title {
+    font-size: 5vw;
+  }
+  .main-container section:nth-of-type(5) .recipes .recipe-sub {
+    font-size: 3.7vw;
+  }
+  .main-container section:nth-of-type(5) .recipes .recipe-p {
+    font-size: 2.4vw;
+  }
+  .main-container section:nth-of-type(5) .recipes a > button {
+    font-size: 2.4vw;
+  }
+  .main-container section:nth-of-type(6) {
+    width: 100%;
+    height: 100%;
+  }
+  .main-container section:nth-of-type(6) video {
+    margin-left: 4%;
+    width: 500px;
+  }
+  .main-container section:nth-of-type(6) .circle {
+    right: 55%;
+    width: 200px;
+    height: 200px;
+  }
+  .main-container section:nth-of-type(6) #playBtn {
+    right: 57%;
+  }
+  .main-container section:nth-of-type(6) #playBtn, .main-container section:nth-of-type(6) .text {
+    font-size: 14px;
+  }
+  .main-container section:nth-of-type(7) {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .main-container {
+    display: block;
+    font-family: "Kanit", sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .main-container section {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+  }
+  .main-container section:nth-of-type(1) {
+    width: 100%;
+    height: 100%;
+  }
+  .main-container section:nth-of-type(1) .greet {
+    top: 23%;
+    width: 100%;
+  }
+  .main-container section:nth-of-type(1) .greet h1, .main-container section:nth-of-type(1) .greet p {
+    line-height: 3rem;
+  }
+  .main-container section:nth-of-type(1) .greet .direction {
+    width: 21%;
+  }
+  .main-container section:nth-of-type(1) .right {
+    opacity: 0;
+  }
+  .main-container section:nth-of-type(1) .down {
+    top: 190px;
+    opacity: 0.7;
+  }
+  .main-container section:nth-of-type(2) {
+    width: 100%;
+    height: 100%;
+  }
+  .main-container section:nth-of-type(2) .overview {
+    width: 70%;
+  }
+  .main-container section:nth-of-type(2) .overview h2, .main-container section:nth-of-type(2) .overview h3 {
+    font-size: 3vw;
+  }
+  .main-container section:nth-of-type(2) .overview p {
+    font-size: 1.7vw;
+  }
+  .main-container section:nth-of-type(3) {
+    width: 100%;
+    height: 80%;
+  }
+  .main-container section:nth-of-type(3) img {
+    left: 13%;
+  }
+  .main-container section:nth-of-type(3) p {
+    right: 66%;
+  }
+  .main-container section:nth-of-type(4) {
+    width: 100%;
+    height: 100%;
+  }
+  .main-container section:nth-of-type(4) #brand1 {
+    left: 30%;
+    font-size: 6vw;
+  }
+  .main-container section:nth-of-type(4) #brand2 {
+    left: 18%;
+    top: 15%;
+    font-size: 4vw;
+  }
+  .main-container section:nth-of-type(4) #brand3 {
+    left: 7%;
+    bottom: 3%;
+    font-size: 4vw;
+  }
+  .main-container section:nth-of-type(4) .tin > img {
+    width: 300px;
+  }
+  .main-container section:nth-of-type(4) .t1 {
+    right: 1%;
+  }
+  .main-container section:nth-of-type(4) .t2 {
+    right: 17.5%;
+  }
+  .main-container section:nth-of-type(4) t3 {
+    right: 20%;
+  }
+  .main-container section:nth-of-type(4) .description > h3 {
+    font-size: 2vw;
+  }
+  .main-container section:nth-of-type(4) a > button {
+    font-size: 2vw;
+  }
+  .main-container section:nth-of-type(5) {
+    width: 100%;
+    height: 100%;
+  }
+  .main-container section:nth-of-type(5) .recipes {
+    width: 65%;
+    margin-left: 4rem;
+  }
+  .main-container section:nth-of-type(5) .recipes button {
+    margin-left: 25%;
+  }
+  .main-container section:nth-of-type(6) {
+    width: 100%;
+    height: 100%;
+  }
+  .main-container section:nth-of-type(6) video {
+    width: 780px;
+  }
+  .main-container section:nth-of-type(6) #playBtn, .main-container section:nth-of-type(6) .text {
+    font-size: 16px;
+  }
+  .main-container section:nth-of-type(7) {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .main-container section:nth-of-type(1) .overview .down {
+    opacity: 0;
+  }
+  .main-container section:nth-of-type(2) .overview p {
+    font-size: 1.5vw;
+  }
+  .main-container section:nth-of-type(4) #brand1 {
+    left: 30%;
+  }
+  .main-container section:nth-of-type(4) #brand2 {
+    left: 12%;
+  }
+  .main-container section:nth-of-type(4) #brand3 {
+    bottom: 7%;
+    right: 6.5%;
+  }
+  .main-container section:nth-of-type(6) video {
+    margin-left: 8%;
+    width: 900px;
+    height: auto;
+  }
+}/*# sourceMappingURL=home.css.map */
