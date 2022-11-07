@@ -1,0 +1,728 @@
+@import 'variables';
+@import 'mixins';
+
+
+.main-container{
+    scroll-behavior: smooth;
+    @include container();
+ 
+    section{
+        flex: none;
+        @include flex-center();
+
+        &:nth-of-type(1){
+            background: url('../img/bg1.jpg');
+            color: $text-color-dark;
+            @include bg-format();
+            @include max-vw-vh();
+
+            .greet{
+                position: relative;
+                top: 26%;
+                left: 7%;
+                width: 90%;
+
+                h1{
+                    font-family: $Bebas-Neue;
+                    font-size: 8vw;
+                }
+
+                p{
+                    font-family: $Kanit;
+                    font-size: 4vw;
+                }
+    
+                h1, p{
+                    color: $text-color-light;
+                    line-height: $spacing-m;
+                    z-index: 0;
+                }
+                
+                .find-more{
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    &:visited{
+                        color: $primary-color;
+                    }
+                    &:hover{
+                        color: $text-color-dark;
+                    }
+                }
+
+                .direction{
+                    width: 18%;
+                    border: 3px solid $light-color;
+                    border-radius: 0 0 20px 0;
+                    &:hover{
+                        background-color: $tertiary-color;
+                        color: $text-color-dark;
+                    }
+                }
+            } 
+             
+            .right{
+                position: relative;
+                width: 40px;
+                right: $min-pc;
+                height: auto;
+                opacity: 0.7;
+                animation: slideRight 0.9s infinite ease-in;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+
+            @keyframes slideRight {
+                0%{
+                    transform: translateX(0%);
+                }
+                100%{
+                    transform: translateX(40%);
+                }
+            }
+
+            .down{
+                position: relative;
+                width: 40px;
+                top: 270px;
+                right: 30px;
+                height: auto;
+                opacity: 0;
+                animation: slideDown 0.9s infinite ease-in;
+            }
+
+            @keyframes slideDown {
+                0%{
+                    transform: translateY(0%);
+                }
+                100%{
+                    transform: translateY(40%);
+                }
+            }
+        }
+
+        &:nth-of-type(2){
+            @include theme();
+            width: 70vw;
+            height: $max-vh;
+
+            .overview{
+                width: 80%;
+                height: 70%;
+
+                h2, h3{
+                    text-transform: uppercase;
+                    font-family: $Zen-Antique;
+                    font-size: 2.4vw;
+                }
+
+                p{  
+                    color: $accent-color;
+                    margin: 2.5rem 0;
+                    text-transform: uppercase;
+                    font-size: 1.2vw;
+                }
+
+                button{
+                    position: relative;
+                    width: 30%;
+                    left: 33%;
+                }
+
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+
+        &:nth-of-type(3){
+            @include theme();
+            width: 80vw;
+            height: $max-vh;
+
+           img{
+                position: relative;
+                left: 9%;
+                bottom: 2%;
+                width: 77vw;
+                height: auto;
+            }
+            
+            p{
+                position: relative;
+                right: 83%;
+                top: 22%;
+                font-size: 4vw;
+                font-family: $Zen-Antique;
+                z-index: 1;
+            }
+        }
+
+        &:nth-of-type(4){
+            @include theme();
+            width: 120vw;
+            height: $max-vh;
+
+            #brand1{
+                position: relative;
+                bottom: 10%;
+                left: $quarter-pc;
+                font-size: 10vw;
+                font-family: $Kanit;
+                color: $text-color-light;
+                transform: rotate(90deg);
+            }
+
+            #brand2{
+                position: relative;
+                top: 30%;
+                left: 6%;
+                font-size: 8vw;
+                font-family: $Kanit;
+                color: $tertiary-color;
+                transform: rotate(-90deg);
+            }
+
+            #brand3{
+                position: relative;
+                bottom: 11%;
+                right: 12.5%;
+                font-size: 8vw;
+                color: $text-color-light;
+                transform: rotate(-90deg);
+            }
+
+            .tin > img{
+                width: 450px;   
+                height: auto;
+            }
+
+            .t1{
+                position: relative;
+                // background-color: aqua;
+                right: 18%;
+            }
+
+            .t2{
+                position: relative;
+                // background-color: aqua;
+                right: 26%;
+            }
+
+            .t3{
+                position: relative;
+                // background-color: aqua;
+                right: 33%;
+            }
+
+            .description{
+                width: 70%;
+                margin-left: 15%;
+                @include flexc-center();
+            }
+
+            button{
+                width: $max-pc;
+            }
+            
+            a{
+                text-decoration: none;
+            }
+        }
+
+        &:nth-of-type(5){
+            @include theme();
+            width: $half-vw;
+            height: $max-vh;
+
+            .recipes{
+                // background-color: aqua; 
+                width: 70%;
+                height: 60%;
+                margin-right: 4rem;
+
+                span{
+                    font-family: $Island-Moments;
+                    font-size: 7vw;
+                    display: block;
+                }
+
+                .recipe-title{
+                    font-family: $Zen-Antique;
+                    font-size: 3vw;
+                    line-height: $spacing-sm;
+                    margin-bottom: 2.5rem;
+                }
+
+                .recipe-sub{
+                    font-size: 2vw;
+                    margin-bottom: 3rem;
+                }
+
+                .recipe-p{
+                    text-transform: uppercase;
+                    color: $accent-color;
+                    margin-bottom: 4rem;
+                }
+
+                button{
+                    margin-left: 26%;
+                    width: $half-pc;
+                    border: 3px solid $light-color;
+                    border-radius: 0 0 20px 0;
+                    &:hover{
+                        background-color: $tertiary-color;
+                        color: $text-color-dark;
+                    }
+                }
+
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+
+        &:nth-of-type(6){
+            @include theme();
+            width: 90vw;
+            height: $max-vh;
+
+            video{
+                margin-left: 6%;
+                width: 1100px;
+                height: auto;
+            }  
+
+            .circle{
+                right: 48%;
+                width: 250px;
+                height: 250px;
+                border-radius: $half-pc;
+                position: relative;
+               @include flex-center();
+            }
+
+            #playBtn{
+                position: relative;
+                right: 51%;
+                width: 70px;
+                height: auto;
+            }
+
+            #playBtn, .text{
+                position: relative;
+                color: $text-color-light;
+                font-size: 18px;
+                animation: Rotation 20s linear infinite;
+            }
+            
+            @keyframes Rotation{
+                0%
+                {
+                   transform: rotate(360deg); 
+                }
+                100%
+                {
+                    transform: rotate(0deg);
+                }
+            }
+
+            .circle .text span{
+                position: absolute;
+                top: -100px;
+                text-transform: uppercase;
+                display: inline-block;
+                transform-origin: 0 90px;
+            }      
+        }
+
+        &:nth-of-type(7){
+            @include theme();
+            @include max-vw-vh();
+        }
+    }
+}
+
+@media screen and (min-width: 424px) and (max-width: 767px){
+    .main-container{
+        @include md-container();
+ 
+        section{
+            overflow-y: scroll;
+            overflow-x: hidden;
+            width: $max-pc;
+            height: $max-pc;
+
+            &:nth-of-type(1){
+                width: $max-pc;
+                height: $max-pc;
+
+                .greet{
+                    top: 23%;
+                    width: 100%;
+                    
+                    h1{
+                        font-size: 10vw;
+                    }
+    
+                    p{
+                        font-size: 5vw;
+                    }
+
+                    h1, p{
+                       line-height: 2.5rem;
+                    }
+
+                    .direction{
+                        width: 43%;
+                    }
+                } 
+
+                .right{
+                    opacity: 0;
+                }
+
+                .down{
+                    top: 190px;
+                    opacity: 0.7;
+                }
+            }
+
+            &:nth-of-type(2){
+                width: $max-pc;
+                height: 80%;
+
+                .overview{
+                    width: 70%;
+                    h2, h3{
+                        font-size: 3vw;
+                    }
+    
+                    p{  
+                        font-size: 2.5vw;
+                    }
+
+                    button{
+                        font-size: 2.5vw;
+                    }
+                }
+            }
+
+            &:nth-of-type(3){
+                width: $max-pc;
+                height: 70%;
+
+                img{
+                    left: 13%;
+                }
+                
+                p{
+                    right: 66%;
+                }
+            }
+
+            &:nth-of-type(4){
+                overflow-x: scroll;
+                width: $max-pc;
+                height: 80%;
+
+                #brand1{
+                    left: 65%;
+                    font-size: 8vw;
+                }
+
+                #brand2{
+                    left: 47%;
+                    top: 15%;
+                    font-size: 6vw;
+                }
+
+                #brand3{
+                    left: 30.5%;
+                    bottom: 3%;
+                    font-size: 6vw;
+                }
+
+                .tin > img{
+                    width: 270px;
+                }
+
+                .t1{
+                    left: 25%;
+                }
+
+                .t2{
+                    left: 8%;
+                }
+
+                .t3{
+                    right: 5%;
+                }
+
+                .description > h3{
+                    font-size: 2.1vw;
+                }
+
+                a > button {
+                    font-size: 2.1vw;
+                }
+
+            }
+            
+            &:nth-of-type(5){
+                width: $max-pc;
+                height: 90%;
+
+                .recipes{
+                    width: 65%;
+                    margin-left: 4rem;
+                    
+                    .recipe-title{
+                        font-size: 5vw;
+                    }
+    
+                    .recipe-sub{
+                        font-size: 3.7vw;
+                    }
+    
+                    .recipe-p{
+                        font-size: 2.4vw;
+                    }
+
+                    a> button{
+                        font-size: 2.4vw;
+                    }
+                }
+            }
+
+            &:nth-of-type(6){
+                width: $max-pc;
+                height: $max-pc;
+
+                video{
+                    margin-left: 4%;
+                    width: 500px;
+                }  
+                
+                .circle{
+                    right: 55%;
+                    width: 200px;
+                    height: 200px;
+                }
+
+                #playBtn{
+                    right: 57%;
+                }
+
+                #playBtn, .text{
+                    font-size: 14px;
+                }
+            }
+
+            &:nth-of-type(7){
+                width: $max-pc;
+                height: 100%;
+            }
+            
+        }
+ 
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1023px){
+    .main-container{
+        @include md-container();
+ 
+        section{
+            overflow-y: scroll;
+            overflow-x: hidden;
+            width: $max-pc;
+            height: $max-pc;
+
+            &:nth-of-type(1){
+                width: $max-pc;
+                height: $max-pc;
+
+                .greet{
+                    top: 23%;
+                    width: 100%;
+    
+                    h1, p{
+                       line-height: 3rem;
+                    }
+
+                    .direction{
+                        width: 21%;
+                    }
+                } 
+
+                .right{
+                    opacity: 0;
+                }
+
+                .down{
+                    top: 190px;
+                    opacity: 0.7;
+                }
+            }
+
+            &:nth-of-type(2){
+                width: $max-pc;
+                height: $max-pc;
+
+                .overview{
+                    width: 70%;
+                    h2, h3{
+                        font-size: 3vw;
+                    }
+    
+                    p{  
+                        font-size: 1.7vw;
+                    }
+                }
+            }
+
+            &:nth-of-type(3){
+                width: $max-pc;
+                height: 80%;
+
+                img{
+                    left: 13%;
+                }
+                
+                p{
+                    right: 66%;
+                }
+            }
+
+            &:nth-of-type(4){
+                width: $max-pc;
+                height: $max-pc;
+
+                #brand1{
+                    left: 30%;
+                    font-size: 6vw;
+                }
+
+                #brand2{
+                    left: 18%;
+                    top: 15%;
+                    font-size: 4vw;
+                }
+
+                #brand3{
+                    left: 7%;
+                    bottom: 3%;
+                    font-size: 4vw;
+                }
+
+                .tin > img{
+                    width: 300px;
+                }
+
+                .t1{
+                    right: 1%;
+                }
+
+                .t2{
+                    right: 17.5%;
+                }
+
+                t3{
+                    right: 20%;
+                }
+
+                .description > h3{
+                    font-size: 2vw;
+                }
+
+                a > button {
+                    font-size: 2vw;
+                }
+
+            }
+            
+            &:nth-of-type(5){
+                width: $max-pc;
+                height: $max-pc;
+
+                .recipes{
+                    width: 65%;
+                    margin-left: 4rem;
+    
+                    button{
+                        margin-left: 25%;
+                    }
+                }
+            }
+
+            &:nth-of-type(6){
+                width: $max-pc;
+                height: $max-pc;
+
+                video{
+                    width: 780px;
+                }  
+    
+                #playBtn, .text{
+                    font-size: 16px;
+                }
+            }
+
+            &:nth-of-type(7){
+                width: $max-pc;
+                height: $max-pc;
+            }
+            
+        }
+ 
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px){
+    .main-container{
+        section{
+            &:nth-of-type(1){
+                .overview{
+                    .down{
+                        opacity: 0;
+                    }
+                }
+            }
+
+            &:nth-of-type(2){
+                .overview{
+                    p{  
+                        font-size: 1.5vw;
+                    }
+                }
+            }
+
+            &:nth-of-type(4){
+                #brand1{
+                    left: 30%;
+                }
+    
+                #brand2{
+                    left: 12%;
+                }
+    
+                #brand3{
+                    bottom: 7%;
+                    right: 6.5%;
+                }
+    
+            }
+
+            &:nth-of-type(6){
+                video{
+                    margin-left: 8%;
+                    width: 900px;
+                    height: auto;
+                }  
+    
+            }
+        }
+    }
+}
+
