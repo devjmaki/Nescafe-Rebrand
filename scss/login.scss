@@ -1,0 +1,110 @@
+@import 'variables';
+@import 'mixins';
+
+.login-container{
+  @include container();
+
+    section{
+        flex: none;
+        @include flex-center();
+
+        &:nth-of-type(1){
+            @include theme();
+            @include max-vw-vh();
+
+            #login{
+                width: 35%;
+                height: 460px;
+                margin: 2.5rem;
+                border-radius: 5px;
+                background-color: $primary-color;
+                box-shadow: 0 4px 8px 0 rgba(rgb(255, 255, 255), 0.2), 0 6px 20px 0 rgba(white, 0.19);
+                
+                .form-content{
+                    margin: 3rem 2.5rem;
+                }
+                
+                .input-group:last-of-type{
+                    margin-bottom: 0;
+                }
+                
+                .input-group-text{
+                    z-index: 1;
+                    width: 11%;  
+                }
+            
+                .lock{
+                    width: 15px;
+                    height: 15px;
+                    align-items: center;
+                    margin: 3px;
+                }
+            
+                input{
+                    @include theme();
+                    border: none;
+                    border-radius: 0 5px 5px 0;
+                    width: 67%;
+                }
+            
+                .pass{
+                    color: $tertiary-color;
+                    text-decoration: none;
+                    text-align: end;
+                    margin-right: 4.2rem;
+                    margin-top: -15px;
+                    font-size: 0.8rem;
+                    &:hover{
+                    color: $text-color-light;
+                    }
+                }
+
+                button{
+                    width: 35%;
+                    &:first-of-type{
+                        margin-left: 4rem;
+                    }
+                }
+            
+                hr{
+                    display: block;
+                    content: "";
+                    height: 1px;    
+                    position: absolute;
+                    width: 27%;
+                    margin-left: 2.5rem;
+                    margin-top: $margin-s;      
+                    z-index: 1;
+                    border: 0;
+                    background-color: $accent-color;
+                    justify-content: center;
+                }
+            
+                h2{
+                    font-size: 0.8rem;
+                    margin-top: 2.5rem;
+                }
+            
+                .alt{
+                    width: 30px;
+                    height: auto;
+                    position: fixed;
+                    margin-right: $margin-xs;
+                    &:hover{
+                        width: 35px;
+                    } 
+                }
+                
+                #alt-fb{
+                    left: 47%;
+                    top: 74%;
+                }
+            
+                #alt-gg{
+                    left: 51%;
+                    top: 74%;
+                }
+            }
+        }
+    }
+}
