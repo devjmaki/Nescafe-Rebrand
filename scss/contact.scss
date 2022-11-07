@@ -1,0 +1,239 @@
+@import 'variables';
+@import 'mixins';
+
+.contact-container{
+    @include container();
+
+    section{
+        flex: none;
+        @include flex-center();
+
+        &:nth-of-type(1){
+            @include theme();
+            @include max-vw-vh();
+
+            form .txt-field{
+                position: relative;
+                margin: 20px 0;
+            }
+
+            form{
+                width: 90vw;
+                height: auto;
+                margin-left: 6%;
+
+                p{
+                    font-size: 5vw;
+                    line-height: 4rem;
+                    margin-left: 3rem;
+                }
+
+                label{
+                    text-transform: uppercase;
+                }
+
+                .txt-field input{
+                    position: relative;
+                    width: 35%;
+                    height: 30px;
+                    font-size: 16px;
+                    color: $tertiary-color;
+                    border: none;
+                    background: none;
+                    outline: none;
+                }
+
+                #fName{
+                    left: 22%;
+                }
+
+                #emailAdd{
+                    left: 10%;
+                }
+
+                #message{
+                    left: 25%;
+                }
+
+                .txt-field label{
+                    position: absolute;
+                    bottom: -1%;
+                    right: 305px;
+                    color: $light-color;
+                    pointer-events: none;
+                }
+
+                .txt-field span::before{
+                    content: '';
+                    position: absolute;
+                    bottom: 2%;
+                    left: 55%;
+                    width: 35%;
+                    height: 1px;
+                    background: $tertiary-color;
+                }
+
+                .txt-field input:focus ~ label, .txt-field input:valid ~ label{
+                    color: $tertiary-color;
+                    bottom: 50px;
+                }
+
+                button{
+                    position: relative;
+                    left: 80%;
+                    width: 10%;
+                    border: 3px solid $light-color;
+                    border-radius: 0 0 20px 0;
+                    &:hover{
+                        background-color: $tertiary-color;
+                        color: $text-color-dark;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 424px) and (max-width: 767px){
+    .contact-container{
+        @include md-container();
+  
+        section{
+            overflow-y: scroll;
+            overflow-x: hidden;
+            width: $max-pc;
+            height: $max-pc;
+  
+            &:nth-of-type(1){
+                width: $max-pc;
+                height: $max-pc;
+
+                form{
+                    width: 90vw;
+                    height: auto;
+                    margin-left: 6%;
+    
+                    p{
+                        font-size: 3.6vw;
+                        line-height: 3rem;
+                        margin-left: $margin-xs;
+                    }
+    
+                    #fName{
+                        left: 25%;
+                    }
+    
+                    #emailAdd{
+                        left: 16%;
+                    }
+    
+                    #message{
+                        left: 25%;
+                    }
+    
+                    .txt-field label{     
+                        right: 130px;
+                    }
+
+                    .txt-field span::before{
+                        content: '';
+                        position: absolute;
+                        bottom: 2%;
+                        left: 40%;
+                        width: 50%;
+                        height: 1px;
+                        background: $tertiary-color;
+                    }
+
+                    button{
+                        left: 70%;
+                        width: 18%;
+                    }
+                }
+     
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1023px){
+    .contact-container{
+        @include md-container();
+  
+        section{
+            overflow-y: scroll;
+            overflow-x: hidden;
+            width: $max-pc;
+            height: $max-pc;
+  
+            &:nth-of-type(1){
+                width: $max-pc;
+                height: $max-pc;
+
+                form{
+                    width: 90vw;
+                    height: auto;
+                    margin-left: 6%;
+    
+                    p{
+                        font-size: 5vw;
+                        line-height: 3rem;
+                        margin-left: $margin-ssm;
+                    }
+    
+                    #fName{
+                        left: 20%;
+                    }
+    
+                    #emailAdd{
+                        left: 8%;
+                    }
+    
+                    #message{
+                        left: 15%;
+                    }
+    
+                    .txt-field label{     
+                        right: 180px;
+                    }
+
+                    button{
+                        left: 70%;
+                        width: 18%;
+                    }
+                }
+     
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px){
+    .contact-container{
+        section{
+            &:nth-of-type(1){
+                form{
+                    .txt-field label{     
+                        right: 235px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 1440px){
+    .contact-container{
+        section{
+            &:nth-of-type(1){
+                form{
+                    .txt-field label{     
+                        right: 345px;
+                    }
+                }
+            }
+        }
+    }
+
+}
