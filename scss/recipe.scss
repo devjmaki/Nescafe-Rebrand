@@ -1,0 +1,547 @@
+@import 'variables';
+@import 'mixins';
+
+.recipe-container{
+    @include container();
+
+    section{
+        flex: none;
+        @include flex-center();
+
+        &:nth-of-type(1){
+            @include theme();
+            @include max-vw-vh();
+
+            .bg-recipe{
+                position: relative;
+                top: 2%;
+                left: 7%;
+                width: 55vw;
+                height: auto;
+            }
+    
+            #headingGrp{
+                position: relative;
+                margin-right: 5rem;
+                right: 4%;
+                top: 6%;
+            }
+
+            p{
+                font-size: 4vw;
+                font-family: $Zen-Antique;
+                opacity: 0.5;
+            }
+
+            span{
+                color: $tertiary-color;
+            }
+        }
+
+        &:nth-of-type(2){
+            @include theme();
+            width: $half-vw;
+            height: $max-vh;
+
+            .overview{
+                width: 80%;
+                height: 70%;
+
+                h2, h3{
+                    text-transform: uppercase;
+                    font-family: $Zen-Antique;
+                    font-size: 2.4vw;
+                }
+
+                p{  
+                    color: $accent-color;
+                    margin: 2.5rem 0;
+                    text-transform: uppercase;
+                    font-size: 1.2vw;
+                }
+
+                button{
+                    position: relative;
+                    width: 40%;
+                    left: 30%;
+                }
+
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+
+        &:nth-of-type(3){
+            @include theme();
+            width: 190vw;
+            height: $max-vh;  
+            
+            .re-container{
+                width: 300px;
+                height: auto;
+                position: relative;
+                &:nth-of-type(1){
+                    top: 9%;
+                    right: 8%;
+                }
+                &:nth-of-type(2){
+                    top: 14%;
+                    right: 2%;
+                }
+                &:nth-of-type(3){
+                    top: 1%;
+                }
+                &:nth-of-type(4){
+                    left: 4%;
+                }
+                &:nth-of-type(5){
+                    top: 14%;
+                    left: 7%;
+                }
+                &:nth-of-type(6){
+                    top: 12%;
+                    left: 10%;
+                }
+
+                .c1{
+                    width: 70%;
+                    margin-left: $margin-ssm;
+                    // background-color: aqua;
+                }
+
+                .c2{
+                    width: 90%;
+                    // background-color: aqua;
+                }
+
+                .c3{
+                    width: 80%;
+                    // background-color: aqua;
+                }
+
+                .c4{
+                    width: 70%;
+                    margin-left: $margin-ssm;
+                    // background-color: aqua;
+                }
+
+                .c5{
+                    width: 65%;
+                    margin-left: 2.2rem;
+                    // background-color: aqua;
+                }
+
+                .c6{
+                    width: 95%;
+                    // background-color: aqua;
+                }
+
+                .recipe-label{
+                    width: 95%;
+                    margin-top: $margin-s;
+                    @include flexc-center();
+                    // background-color: aqua;
+
+                    h3{
+                        font-size: 1.9vw;
+                    }
+        
+                    button{
+                        width: $half-pc;
+                    }
+
+                    .close{
+                        position: relative;
+                        width: 2%;
+                        left: 95%;
+                    }
+
+                    .nav-link{
+                        color: $primary-color;
+                    }
+                }     
+            }
+        }
+
+        &:nth-of-type(4){
+            @include theme();
+            width: 60vw;
+            height: $max-vh; 
+
+            h3{
+                font-size: 3vw;
+                margin-bottom: $margin-ssm;
+            }
+        }
+
+        &:nth-of-type(5){
+            @include theme();
+            @include max-vw-vh();
+        }
+    }
+}
+
+@media screen and (min-width: 424px) and (max-width: 767px){
+    .recipe-container{
+        @include md-container();
+ 
+        section{
+            overflow-y: scroll;
+            overflow-x: hidden;
+            width: $max-pc;
+            height: $max-pc;
+
+            &:nth-of-type(1){
+                width: $max-pc;
+                height: $max-pc;
+
+                p{
+                    font-size: 3.7vw;
+                }
+            }
+
+            &:nth-of-type(2){
+                width: $max-pc;
+                height: 80%;
+
+                .overview{
+                    width: 70%;
+    
+                    h2, h3{
+                        font-size: 4vw;
+                    }
+    
+                    p{  
+                        font-size: 2.6vw;
+                    }
+                }
+            }
+
+            &:nth-of-type(3){
+                width: $max-pc;
+                height: 75%;
+                display: flex;
+                font-family: $Kanit;
+                @include scroll-x();
+
+                .re-container{
+                    &:nth-of-type(1){
+                        top: 9%;
+                        left: 4%;
+                    }
+                    &:nth-of-type(2){
+                        top: 12.9%;
+                        left: 15%;
+                    }
+                    &:nth-of-type(3){
+                        top: 7%;
+                        left: 25%;
+                    }
+                    &:nth-of-type(4){
+                        top: 6.5%;
+                        left: 33%;
+                    }
+                    &:nth-of-type(5){
+                        top: 13.5%;
+                        left: 39%;
+                    }
+                    &:nth-of-type(6){
+                        top: 12.5%;
+                        left: 46%;
+                    }
+
+                    .c1{
+                        width: 85%;
+                        margin-left: $margin-s;
+                    }
+    
+                    .c2{
+                        width: 95%;
+                    }
+    
+                    .c3{
+                        width: 80%;
+                        margin-left: $margin-xs;
+                    }
+    
+                    .c4{
+                        width: 70%;
+                        margin-left: -0.1rem;
+                    }
+    
+                    .c5{
+                        width: 65%;
+                        margin-left: 1rem;
+                    }
+    
+                    .c6{
+                        width: 95%;
+                        margin-right: 4rem;
+                    }
+                    
+                    .recipe-label{
+                        width: 100%;
+
+                        h3{
+                            font-size: 1.4vw;
+                        }
+
+                        button{
+                            width: $max-pc;
+                            font-size: 2.2vw;
+                        }
+    
+                        .close{
+                            position: relative;
+                            width: 3%;
+                            left: 95%;
+                        }
+    
+                        .nav-link{
+                            color: $primary-color;
+                        }
+                    }     
+
+                }
+            }
+
+            &:nth-of-type(4){
+                width: $max-pc;
+                height: 85%;
+            }
+
+            &:nth-of-type(5){
+                width: $max-pc;
+                height: $max-pc;
+            }
+        }
+    }
+}
+@media screen and (min-width: 768px) and (max-width:1023px){
+    .recipe-container{
+        @include md-container();
+ 
+        section{
+            overflow-y: scroll;
+            overflow-x: hidden;
+            width: $max-pc;
+            height: $max-pc;
+
+            &:nth-of-type(1){
+                width: $max-pc;
+                height: $max-pc;
+            }
+
+            &:nth-of-type(2){
+                width: $max-pc;
+                height: $max-pc;
+
+                .overview{
+                    width: 70%;
+    
+                    h2, h3{
+                        font-size: 4vw;
+                    }
+    
+                    p{  
+                        font-size: 2vw;
+                    }
+                }
+            }
+
+            &:nth-of-type(3){
+                width: $max-pc;
+                height: 75%;
+                display: flex;
+                font-family: $Kanit;
+                @include scroll-x();
+
+                .re-container{
+                    &:nth-of-type(1){
+                        top: 9%;
+                        left: 4%;
+                    }
+                    &:nth-of-type(2){
+                        top: 13.2%;
+                        left: 7%;
+                    }
+                    &:nth-of-type(3){
+                        top: 4%;
+                        left: 10%;
+                    }
+                    &:nth-of-type(4){
+                        top: 3%;
+                        left: 13%;
+                    }
+                    &:nth-of-type(5){
+                        top: 14%;
+                        left: 16%;
+                    }
+                    &:nth-of-type(6){
+                        top: 12.5%;
+                        left: 19%;
+                    }
+
+                    .c1{
+                        width: 75%;
+                        margin-left: $margin-s;
+                    }
+    
+                    .c2{
+                        width: 95%;
+                    }
+    
+                    .c3{
+                        width: 80%;
+                        margin-left: $margin-xs;
+                    }
+    
+                    .c4{
+                        width: 70%;
+                    }
+    
+                    .c5{
+                        width: 65%;
+                        margin-left: 1rem;
+                    }
+    
+                    .c6{
+                        width: 95%;
+                        margin-right: 4rem;
+                    }
+                    
+                    .recipe-label{
+                        width: 100%;
+
+                        h3{
+                            font-size: 1.4vw;
+                        }
+            
+                        button{
+                            width: $max-pc;
+                        }
+    
+                        .close{
+                            position: relative;
+                            width: 3%;
+                            left: 95%;
+                        }
+    
+                        .nav-link{
+                            color: $primary-color;
+                        }
+                    }     
+
+                }
+            }
+
+            &:nth-of-type(4){
+                width: $max-pc;
+                height: 85%;
+            }
+
+            &:nth-of-type(5){
+                width: $max-pc;
+                height: $max-pc;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width:1439px){
+    .recipe-container{
+        section{
+            &:nth-of-type(2){
+                .overview{
+                    p{  
+                        font-size: 1.7vw;
+                    }
+                }
+            }
+            &:nth-of-type(3){
+                .re-container{
+                    width: 250px;
+                    &:nth-of-type(1){
+                        top: 9%;
+                        right: 10%;
+                    }
+                    &:nth-of-type(2){
+                        top: 13.2%;
+                        right: 6%;
+                    }
+                    &:nth-of-type(3){
+                        top: 4%;
+                        right: 1%;
+                    }
+                    &:nth-of-type(4){
+                        top: 3%;
+                        left: 2%;
+                    }
+                    &:nth-of-type(5){
+                        top: 14%;
+                        left: 6%;
+                    }
+                    &:nth-of-type(6){
+                        top: 12.5%;
+                        left: 10%;
+                    }
+
+                    .recipe-label{
+                        h3{
+                            font-size: 1.5vw;
+                        }
+                    }     
+                }
+            }
+        }
+    }
+}   
+
+@media screen and (min-width: 1440px){
+    .recipe-container{
+        section{
+            &:nth-of-type(2){
+                .overview{
+                    p{  
+                        font-size: 1.7vw;
+                    }
+                }
+            }
+            &:nth-of-type(3){
+                .re-container{
+                    &:nth-of-type(1){
+                        top: 9%;
+                        right: 10%;
+                    }
+                    &:nth-of-type(2){
+                        top: 13.2%;
+                        right: 6%;
+                    }
+                    &:nth-of-type(3){
+                        top: 4%;
+                        right: 1%;
+                    }
+                    &:nth-of-type(4){
+                        top: 3%;
+                        left: 2%;
+                    }
+                    &:nth-of-type(5){
+                        top: 14%;
+                        left: 6%;
+                    }
+                    &:nth-of-type(6){
+                        top: 12.5%;
+                        left: 10%;
+                    }
+
+                    .recipe-label{
+                        h3{
+                            font-size: 1.5vw;
+                        }
+                    }     
+                }
+            }
+        }
+    }
+}   
