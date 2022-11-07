@@ -1,0 +1,353 @@
+@import 'variables';
+@import 'mixins';
+
+.about-container{
+  @include container();
+
+    section{
+        flex: none;
+        @include flex-center();
+
+        &:nth-of-type(1){
+          background: url('../img/about-pic.jpg');
+          color: $text-color-light;
+          @include bg-format();
+          @include max-vw-vh();
+          
+          h2{
+            font-family: $Bebas-Neue;
+            font-size: 8vw;
+          }
+
+          p{
+            font-family: $Kanit;
+              font-size: 4vw;
+          }
+
+          h2, p{
+            color: $text-color-light;
+            line-height: 5rem;
+            z-index: 0;
+          }
+        }
+
+        &:nth-of-type(2){
+          @include theme();
+          width: 60vw;
+          height: $max-vh;
+
+          .overview{
+            width: 80%;
+            height: 70%;
+
+            h2{
+              text-transform: uppercase;
+              font-family: $Zen-Antique;
+              font-size: 2.4vw;
+            }
+
+            p{  
+              color: $accent-color;
+              margin: $margin-sm 0;
+              text-transform: uppercase;
+              font-size: 1.2vw;
+            }
+          }
+        }
+
+        &:nth-of-type(3){
+          @include theme();
+          width: 80vw;
+          height: $max-vh;
+
+          img{
+            position: relative;
+            left: 15%;
+            bottom: 2%;
+            z-index: 0;
+            width: auto;
+            height: 80vh;
+          }
+        
+          h3{
+            position: relative;
+            right: 16%;
+            top: 37%;
+            font-size: 2vw;
+            font-family: $Zen-Antique;
+            z-index: 1;
+          }
+        }
+
+        &:nth-of-type(4){
+          @include theme();
+          width: 90vw;
+          height: $max-vh;
+
+          video{
+            margin-left: 6%;
+            width: 1100px;
+            height: auto;
+          }  
+
+          .circle{
+            right: 48%;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          #playBtn{
+            position: relative;
+            right: 51%;
+            width: 70px;
+            height: auto;
+            cursor: pointer;   
+          }
+
+          #playBtn, .text{
+            position: relative;
+            color: #fefefe;
+            font-size: 18px;
+            animation: Rotation 20s linear infinite;
+          }
+          
+          @keyframes Rotation{
+            0%
+            {
+              transform: rotate(360deg); 
+            }
+            100%
+            {
+              transform: rotate(0deg);
+            }
+          }
+
+          .circle .text span{
+            position: absolute;
+            top: -100px;
+            text-transform: uppercase;
+            display: inline-block;
+            transform-origin: 0 90px;
+          }  
+        }
+
+        &:nth-of-type(5){
+          @include theme();
+          @include max-vw-vh();
+        }
+    }
+}
+
+@media screen and (min-width: 424px) and (max-width: 767px){
+  .about-container{
+    @include md-container();
+
+    section{
+      overflow-y: scroll;
+      overflow-x: hidden;
+      width: $max-pc;
+      height: $max-pc;
+
+      &:nth-of-type(1){
+          width: $max-pc;
+          height: $max-pc;
+          
+          .h2, p{
+            line-height: 0.5rem;
+          }
+
+          h2{
+            font-size: 9vw;
+          }
+
+          p{
+              font-size: 6vw;
+          }
+      }
+      
+      &:nth-of-type(2){
+        width: $max-pc;
+        height: 80%;
+
+        .overview{
+          width: 70%;
+          height: 70%;
+
+          h2{
+            font-size: 4vw;
+          }
+
+          p{  
+            font-size: 2.5vw;
+          }
+        }
+      }
+      
+      &:nth-of-type(3){
+        width: $max-pc;
+        height: 80%;
+
+        img{
+          height: 50vh;
+          margin: $center;
+        }
+
+        h3{
+          font-size: 4vw;
+          right: 15%;
+        }
+      }
+      
+      &:nth-of-type(4){
+        width: $max-pc;
+        height: $max-pc;
+
+        video{
+          margin-left: 8%;
+          width: 500px;
+        }  
+      
+        .circle{
+          right: 47%;
+          width: 200px;
+          height: 200px;
+        }
+
+        #playBtn{
+          right: 55%;
+        } 
+
+        #playBtn, .text{
+          font-size: 14px;
+        }
+      }
+      
+      &:nth-of-type(5){
+        width: $max-pc;
+        height: $max-pc;
+      }
+    }
+  }
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width:1023px){
+  .about-container{
+      @include md-container();
+
+      section{
+        overflow-y: scroll;
+        overflow-x: hidden;
+        width: $max-pc;
+        height: $max-pc;
+
+        &:nth-of-type(1){
+            width: $max-pc;
+            height: $max-pc;
+        }
+        
+        &:nth-of-type(2){
+          width: $max-pc;
+          height: $max-pc;
+
+          .overview{
+            width: 70%;
+            height: 70%;
+
+            h2{
+              font-size: 4vw;
+            }
+
+            p{  
+              font-size: 1.9vw;
+            }
+          }
+        }
+        
+        &:nth-of-type(3){
+          width: $max-pc;
+          height: 80%;
+
+          img{
+            height: 60vh;
+            margin: $center;
+          }
+
+          h3{
+            font-size: 3.2vw;
+            right: 20%;
+          }
+        }
+        
+        &:nth-of-type(4){
+          width: $max-pc;
+          height: $max-pc;
+
+            video{
+              margin-left: 3%;
+              width: 800px;
+            }  
+    
+            #playBtn, .text{
+              font-size: 16px;
+            }
+        }
+        
+        &:nth-of-type(5){
+          width: $max-pc;
+          height: $max-pc;
+        }
+      }
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px){
+  .about-container{
+    section{
+      &:nth-of-type(2){
+        .overview{
+          p{  
+            font-size: 1.7vw;
+          }
+        }
+      }
+
+      &:nth-of-type(3){
+        img{
+          height: 60vh;
+        }
+
+        h3{
+          font-size: 2.5vw;
+        }
+      }
+
+      &:nth-of-type(4){
+        video{
+          left: 7%;
+          width: 870px;
+        }  
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px){
+  .about-container{
+    section{
+      &:nth-of-type(2){
+        .overview{
+          p{  
+            font-size: 1.7vw;
+          }
+        }
+      }
+    }
+  }
+}
