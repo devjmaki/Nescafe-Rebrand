@@ -87,7 +87,7 @@ $(function() {
         $(".nav1").text("Ingredients");
         $(".nav2").text("Required");
         $(".nav3").text("Steps");
-        $(".c1-nav1-i1").text("2-3tsp NESCAFÉ AZERA Craft Coffee brewed with 200ml of freshly boiled water");
+        $(".c1-nav1-i1").text("2-3 tsp NESCAFÉ AZERA Craft Coffee brewed with 200 ml of freshly boiled water");
         $(".c1-nav1-i2").text("2 scoops of vanilla ice cream (can be substituted for dairy free alternative) (Contains milk)");
         $(".c1-nav1-i3").text("1 piece chocolate chopped or grated chocolate");
         $(".c1-nav2-r1").text("Small knife");
@@ -99,8 +99,8 @@ $(function() {
         $(".c1-nav3-s3").text("Garnish with chopped chocolate and serve immediately.");
         $(".c2-d").text("This simple, delicious recipe will have a cappuccino in your mug without a coffee machine, just the robust flavour of NESCAFÉ.");
         $(".c2-nav1-i1").text("1-2 tsps (2-4g) NESCAFÉ Original");
-        $(".c2-nav1-i2").text("30ml (2 tbsps) freshly boiled waterred");
-        $(".c2-nav1-i3").text("190ml semi-skimmed milk");
+        $(".c2-nav1-i2").text("30 ml (2 tbsps) freshly boiled waterred");
+        $(".c2-nav1-i3").text("190 ml semi-skimmed milk");
         $(".c2-nav1-i4").text("Nutmeg, cinnamon, or cocoa powder (optional)");
         $(".nav2-glassc").text("Glass container");
         $(".nav2-milkfr").text("Milk frother");
@@ -111,10 +111,10 @@ $(function() {
         $(".c2-nav3-s4").text("Pour the frothed milk into the coffee.");
         $(".c2-nav3-s5").text("Sprinkle with nutmeg, cinnamon, or cocoa, and serve immediately.");
         $(".c3-d").text("Create a wonderfully tasty drink with our iced cafe mocha recipe. Perfect for your morning coffee break or as an afternoon treat.");
-        $(".c3-nav1-i1").text("6tsp NESCAFÉ GOLD BLEND brewed with 200ml of freshly boiled water");
-        $(".c3-nav1-i2").text("200ml semi-skimmed milk or dairy-free alternative");
+        $(".c3-nav1-i1").text("6 tsp NESCAFÉ GOLD BLEND brewed with 200 ml of freshly boiled water");
+        $(".c3-nav1-i2").text("200 ml semi-skimmed milk or dairy-free alternative");
         $(".c3-nav1-i3").text("50g white chocolate chopped or white chocolate buttons (contains milk)");
-        $(".c3-nav1-i4").text("2tbsp lightly whipped cream (optional)");
+        $(".c3-nav1-i4").text("2 tbsp lightly whipped cream (optional)");
         $(".c3-nav1-i5").text("Nutmeg");
         $(".c3-nav2-r2").text("Heavy bottom pot");
         $(".c3-nav2-r3").text("Whisk");
@@ -124,30 +124,30 @@ $(function() {
         $(".c3-nav3-s2").text("Add your freshly brewed NESCAFÉ GOLD BLEND to a cup or mug. Top up with the white chocolate milk and stir.");
         $(".c3-nav3-s3").text("If using top with lightly whipped cream and freshly grate nutmeg over the top. ");
         $(".c4-d").text("There's nothing better than a cooling mocha frappé on a hot day, so why not make your own? You can even add a dollop of cream for a perfectly sweet taste.");
-        $(".c4-nav1-i1").text("4-8tsp NESCAFÉ AZERA My Way Latte brewed with 400ml of freshly boiled water and left to cool");
-        $(".c4-nav1-i2").text("100ml semi-skimmed milk or dairy-free alternative");
-        $(".c4-nav1-i3").text("2tbsp sugar syrup (mix 2tbsp sugar with 1tbsp boiling water, bring to the boil and stir until dissolved)");
+        $(".c4-nav1-i1").text("4-8tsp NESCAFÉ AZERA My Way Latte brewed with 400 ml of freshly boiled water and left to cool");
+        $(".c4-nav1-i2").text("100 ml semi-skimmed milk or dairy-free alternative");
+        $(".c4-nav1-i3").text("2 tbsp sugar syrup (mix 2 tbsp sugar with 1 tbsp boiling water, bring to the boil and stir until dissolved)");
         $(".c4-nav1-i4").text("2 handfuls ice cubes");
-        $(".c4-nav1-i5").text("2tbsp lightly whipped cream (optional)");
+        $(".c4-nav1-i5").text("2 tbsp lightly whipped cream (optional)");
         $(".c4-nav2-r1").text("Blender");
         $(".c4-nav3-s1").text("Add all the ingredients apart from the cream to a blender.");
         $(".c4-nav3-s2").text("Blend until foamy and the ice is broken down completely.");
         $(".c4-nav3-s3").text("Pour into a glass and spoon over the lightly whipped cream if using.");
         $(".c5-d").text("Stay cool! Our NESCAFÉ Mocha Mousse will refresh your body, mind, and soul.");
         $(".c5-nav1-i1").text("1-2 tsps (2-4g) NESCAFÉ GOLD BLEND");
-        $(".c5-nav1-i2").text("30ml (2 tbsps) freshly boiled water");
-        $(".c5-nav1-i3").text("110ml cold semi-skimmed milk");
+        $(".c5-nav1-i2").text("30 ml (2 tbsps) freshly boiled water");
+        $(".c5-nav1-i3").text("110 ml cold semi-skimmed milk");
         $(".c5-nav1-i4").text("7 medium ice cubes");
-        $(".c5-nav1-i5").text("2 tsps (10ml) brown sugar (optional)");
+        $(".c5-nav1-i5").text("2 tsps (10 ml) brown sugar (optional)");
         $(".c5-nav3-s1").text("Mix the instant coffee with the hot water. Add the sugar, if you are using it. Stir it well and set it aside.");
         $(".c5-nav3-s2").text("Fill a glass with ice cubes.");
         $(".c5-nav3-s3").text("Slowly pour in the coffee.");
         $(".c5-nav3-s4").text("Slowly stream in the milk.");
         $(".c6-d").text("An indulgently sweet drink with rich aromas of caramel, and the bold, invigorating flavours of NESCAFÉ.");
         $(".c6-nav1-i1").text("1-2 tsps (2-4g) NESCAFÉ instant coffee");
-        $(".c6-nav1-i2").text("30ml (2 tbsps) freshly boiled water");
-        $(".c6-nav1-i3").text("130ml semi-skimmed milk");
-        $(".c6-nav1-i4").text("15ml sugar free caramel sauce");
+        $(".c6-nav1-i2").text("30 ml (2 tbsps) freshly boiled water");
+        $(".c6-nav1-i3").text("130 ml semi-skimmed milk");
+        $(".c6-nav1-i4").text("15 ml sugar free caramel sauce");
         $(".c6-nav1-i5").text("1 tbsp whipped cream (optional)");
         $(".c6-nav3-s1").text("Mix the instant coffee with the hot water. Stir it well and set it aside.");
         $(".c6-nav3-s2").text("Combine the milk and caramel sauce in a glass container. Heat it for 1 minute in a microwave, until bubbles just appear. Give it a stir to mix it properly.");
@@ -155,14 +155,6 @@ $(function() {
         $(".c6-nav3-s4").text("Pour the Salted Caramel Latte into your cup. ");
         // section 4
         $(".r-faq").text("Frequently Asked Questions");
-        $("#headingOne").text("How do you make really good coffee?");
-        $(".a1").text("With NESCAFÉ it's easy. Take a look through our list of easy, at-home coffee recipes, give them a try, and you'll be on your way to finding your favourite way to enjoy NESCAFÉ. It's all about personal taste, and your new favourite might be waiting to be discovered. Give it a try and taste for yourself.");
-        $("#headingOne").text("How do you make really good coffee?");
-        $(".a1").text("With NESCAFÉ it's easy. Take a look through our list of easy, at-home coffee recipes, give them a try, and you'll be on your way to finding your favourite way to enjoy NESCAFÉ. It's all about personal taste, and your new favourite might be waiting to be discovered. Give it a try and taste for yourself.");
-        $("#headingTwo").text("What are good coffee-based drinks to make at home?");
-        $(".a2").text("There are so many coffee recipes to try making at home. You could try making a simple instant cappuccino, a caramel latte, or even a quick iced coffee to get yourself comfortable. Your new favourite coffee recipe is waiting for you to try it.");
-        $("#headingThree").text(" What can I put in my coffee?");
-        $(".a3").text("It is all about personal taste. You can add milk, or a plant-based alternative like oat drink to soften the bold flavours slightly. Since coffee is such a versatile drink, it works well with a lot of different flavours, so why not add a little sugar-free flavoured syrup to your coffee? Experiment with your favourite flavours and find out what works best for you.");
 
         // about page
         //  section 1
@@ -182,9 +174,185 @@ $(function() {
     });
 });
 
+// Arabic
+$(function() {
+    $(".ar").click(function() {
+        //top-menu
+        $(".language-selected").text("ar-XA");
+        $(".sign-in").text("تسجيل الدخول");
+        $(".language-selected").removeClass("change-en");
+        $(".language-selected").removeClass("change-es");
+        $(".language-selected").removeClass("change-fr");
+        $(".language-selected").removeClass("change-ja");
+        $(".language-selected").addClass("change-ar");
+        //offcanvas
+        $(".offcanvas-title").text("عربة التسوق");
+        $(".delivery-txt").text("توصيل");
+        $(".delivery-price").text("SAR0");
+        $(".total-txt").text("المجموع");
+        $(".total-price").text("SAR0.00");
+        $("#check-out").text("الدفع");
+        $("#shop").text("مواصلة التسوق");
+
+        // login
+        $(".pass").text("هل نسيت كلمة السر");
+        $(".login-btn").text("تسجيل الدخول");
+        $(".reset-btn").text("إعادة ضبط");
+        $(".alt-login").text("تسجيل الدخول باستخدام");
+        
+        // landing page
+        //section 1
+        $("#title").text("اكتشف طعمًا أكثر ثراءً");
+        $("#sub-title").text("ألذ قهوة ، نسكافيه جديد");
+        $(".direction").text("اكتشف المزيد");
+        // section 2
+        $(".overview-title").text("الوعد بالذهب الخالص.");
+        $(".overview-sub").text("جرب النكهة التي لا مثيل لها للمحمصة.");
+        $(".overview-p").text("مجموعة NESCAFÉ GOLD BLEND Roastery هي مجموعة من ثلاث فناجين قهوة فورية جديدة ممتازة لمن يشربون القهوة الذين يبحثون عن قهوة عالية الجودة في المنزل. صُنعت كل من الخلطات الجديدة بواسطة محمصات NESCAFÉ GOLD BLEND الرئيسية وتمنحك الفرصة لتجربة المذاق الراقي للقهوة المحمصة بخبرة وأنت مرتاح في منزلك. ");
+        $(".shop-btn").text("تسوق الآن");
+        // section 3
+        $(".sec3-p").text("لعشاق القهوة.");
+        // section 4
+        $("#brand1").text("NESCAFÉ");
+        $("#brand2").text("GOLD");
+        $("#brand3").text("BLEND");
+        $(".lr-coffee").text("الشواء الخفيف");
+        $(".dr-coffee").text("الشوي الداكن");
+        $(".lrd-coffee").text("قطعة خبز محمصة خفيفة");
+        // section 5    
+        $(".recipe-title").text("مجموعة المحمصة");
+        $(".recipe-sub").text("لكل تجربة");
+        $(".recipe-p").text("من العصائر اللذيذة المبردة إلى الكوكتيلات الناعمة المخملية ، جرّب إعداد وصفات قهوة NESCAFÉ المفضلة لديك في المنزل وشارك لقطة من إبداعاتك باستخدام علامة التصنيف #NescafeRecipes.");
+        $(".recipe-btn").text("عرض جميع الوصفات");
+        // section 7
+        $(".footer-title").text("مثل ما ترى؟ تعال ، ارتشف معنا!");
+        $(".contact-btn").text("لنتحدث");
+        $(".home-menu").text("الصفحة الرئيسية");
+        $(".shop-menu").text("القهوة");
+        $(".recipe-menu").text("وصفات");
+        $(".about-menu").text("معلومات عنا");
+        $(".contact-menu").text("اتصل بنا");
+        $(".newsletter").text("النشرة الإخبارية");
+        $(".sub-btn").text("الإشتراك");
+
+        // shop page
+        $(".gb-coffee").text("مزيج الذهب");
+        $("#ngBrand").text("مزيج نسكافيه جولد");
+        $(".sc-coffee").text("قهوة ناعمة");
+        $(".ie-coffee").text("اسبرسو سريع التحضير");
+        $(".nd-coffee").text("خالي الألبان");
+        $(".cl-coffee").text("لاتيه جوز الهند");
+        $(".ol-coffee").text("شوفان لاتيه");
+        $(".add-btn").text("أضف إلى السلة");
+
+        // recipes page
+        // section 1
+        $(".sec1-p").text("وصفات القهوة");
+        // section 2
+        $(".recipe-overview").text("شارك طعم الصداقة.");
+        $(".recipe-op").text(" إذا كنت تبحث بشكل مرتفع ومنخفض عن أفضل وصفات القهوة التي يمكنك إعدادها في المنزل ، فأنت في المكان الصحيح. لدينا شيء للجميع - وصفات القهوة الساخنة لتلك الأيام الباردة والممطرة والشتوية ، ووصفات القهوة المثلجة لأيام الصيف الحارة ، وقهوة مريحة وسهلة الشرب لظهيرة ذهبية ، أو قهوة غنية وغنية في ذلك الصباح الباكر. ");
+        // section3
+        $(".c1-recipe").text("AFFOGATO");
+        $(".c2-recipe").text("كابتشينو");
+        $(".c3-recipe").text("موكا مثلج");
+        $(".c4-recipe").text("موكا FRAPPE");
+        $(".c5-recipe").text("موكا موس");
+        $(".c6-recipe").text("مملح كراميل لاتيه");
+        $(".view-btn").text("مشاهدة الوصفة");
+        $(".c1-d").text("تعني كلمة Affogato غرق بالإيطالية ، وذلك لأن الآيس كريم مغطى بقطعة إسبرسو. حشد حقيقي من السهل صنعه!");
+        $(".c-time").text("التحضير: 5 دقائق.");
+        $(".nav1").text("مكونات");
+        $(".nav2").text("مطلوب");
+        $(".nav3").text("خطوات");
+        $(".c1-nav1-i1").text("2-3 ملاعق صغيرة من قهوة NESCAFÉ AZERA الحرفية المخمرة مع 200 مل من الماء المغلي حديثًا");
+        $(".c1-nav1-i2").text("ملعقتان من آيس كريم الفانيليا (يمكن استبدالها بالبديل الخالي من الألبان) (تحتوي على الحليب)");
+        $(".c1-nav1-i3").text("1 قطعة شوكولاتة مقطعة أو مبشورة");
+        $(".c1-nav2-r1").text("سكين صغير");
+        $(".c1-nav2-r2").text("بولة آيس كريم أو ملعقة");
+        $(".nav-2glasses").text("2 أكواب للتقديم");
+        $(".nav2-allergy").text("مسببات الحساسية في هذه الوصفة: الحليب");
+        $(".c1-nav3-s1").text("في كوب مبرد أو طبق حلوى ، ضع ملعقة من آيس كريم الفانيليا.");
+        $(".c1-nav3-s2").text("اسكب قهوة NESCAFÉ AZERA Craft Coffee ببطء على الآيس كريم.");
+        $(".c1-nav3-s3").text("يُزين بالشوكولاتة المقطعة ويُقدم على الفور.");
+        $(".c2-d").text("هذه الوصفة البسيطة واللذيذة ستحتوي على كابتشينو في كوبك بدون آلة صنع القهوة ، فقط النكهة القوية لنسكافيه.");
+        $(".c2-nav1-i1").text("1-2 ملعقة صغيرة (2-4 جم) نسكافيه الأصلي");
+        $(".c2-nav1-i2").text("30 مل (2 ملعقة كبيرة) ماء مغلي");
+        $(".c2-nav1-i3").text("190 مل حليب نصف منزوع الدسم");
+        $(".c2-nav1-i4").text("جوزة الطيب أو القرفة أو مسحوق الكاكاو (اختياري)");
+        $(".nav2-glassc").text("وعاء زجاجي");
+        $(".nav2-milkfr").text("جهاز إزباد الحليب");
+        $(".nav2-mug").text("القدح للتقديم");
+        $(".c2-nav3-s1").text("اخلطي القهوة سريعة الذوبان مع الماء المغلي. قلبها جيدًا واسكبها في الكوب الذي تختاره.");
+        $(".c2-nav3-s2").text("سخني الحليب في وعاء زجاجي لمدة دقيقة في الميكروويف وقلبه بمجرد تسخينه.");
+        $(".c2-nav3-s3").text("قم برغوة الحليب الساخن لمدة دقيقتين باستخدام جهاز إزباد محمول باليد. إنك تهدف إلى الحصول على طبقة فوم بسمك إصبعين ، 35 مم ، على وجه الدقة.");
+        $(".c2-nav3-s4").text("صب الحليب المزبد في القهوة.");
+        $(".c2-nav3-s5").text("يرش جوزة الطيب أو القرفة أو الكاكاو ويقدم على الفور.");
+        $(".c3-d").text("اصنع مشروبًا رائعًا ولذيذًا مع وصفة الموكا المثلجة الخاصة بنا. مثالي لاستراحة القهوة في الصباح أو كعلاج بعد الظهر.");
+        $(".c3-nav1-i1").text("6 ملاعق صغيرة من NESCAFÉ GOLD BLEND مخمر مع 200 مل من الماء المغلي");
+        $(".c3-nav1-i2").text("200 مل حليب نصف دسم أو بديل خالي من الألبان");
+        $(".c3-nav1-i3").text("50 جرام شوكولاتة بيضاء مقطعة أو أزرار شوكولاتة بيضاء (تحتوي على حليب)");
+        $(".c3-nav1-i4").text("2 ملعقة كبيرة كريمة مخفوقة (اختياري)");
+        $(".c3-nav1-i5").text("جوزة الطيب");
+        $(".c3-nav2-r2").text("وعاء قاع ثقيل");
+        $(".c3-nav2-r3").text("خفقت");
+        $(".c3-nav2-r4").text("مبشرة صغيرة");
+        $(".c3-nav2-r5").text("2 أكواب للتقديم");
+        $(".c3-nav3-s1").text("يُضاف الحليب ورقائق الشوكولاتة البيضاء إلى قدر ثقيل القاع. اخفقي معًا على نار متوسطة منخفضة حتى تذوب الشوكولاتة البيضاء.");
+        $(".c3-nav3-s2").text("أضف NESCAFÉ GOLD BLEND الطازج إلى الكوب أو الكوب. يُضاف حليب الشوكولاتة الأبيض ويُحرّك.");
+        $(".c3-nav3-s3").text("في حالة استخدام الجزء العلوي مع الكريمة المخفوقة قليلاً وجوزة الطيب الطازجة فوقها.");
+        $(".c4-d").text("لا يوجد شيء أفضل من فرابيه المخاوي البارد في يوم حار ، فلماذا لا تصنعه بنفسك؟ يمكنك أيضًا إضافة القليل من الكريمة للحصول على طعم حلو تمامًا.");
+        $(".c4-nav1-i1").text("4-8 ملاعق صغيرة من NESCAFÉ AZERA My Way لاتيه محضّر مع 400 مل من الماء المغلي حديثًا ويترك ليبرد");
+        $(".c4-nav1-i2").text("100 مل حليب نصف دسم أو بديل خالي من الألبان");
+        $(".c4-nav1-i3").text("2 ملعقة كبيرة شراب السكر (اخلطي 2 ملعقة كبيرة سكر مع 1 ملعقة كبيرة ماء مغلي ، واتركيها حتى الغليان وقلبي حتى تذوب)");
+        $(".c4-nav1-i4").text("2 حفنة من مكعبات الثلج");
+        $(".c4-nav1-i5").text("2 ملعقة كبيرة كريمة مخفوقة (اختياري)");
+        $(".c4-nav2-r1").text("الخلاط");
+        $(".c4-nav3-s1").text("أضف جميع المكونات باستثناء الكريمة إلى الخلاط.");
+        $(".c4-nav3-s2").text("امزج حتى تصبح رغوة ويتحلل الجليد تمامًا.");
+        $(".c4-nav3-s3").text("تصب في كوب وملعقة فوق الكريمة المخفوقة إذا كنت تستخدم.");
+        $(".c5-d").text("ابق هادئ! موس نسكافيه موكا سوف ينعش جسمك وعقلك وروحك.");
+        $(".c5-nav1-i1").text("1-2 ملعقة صغيرة (2-4 جم) مزيج نسكافيه جولد");
+        $(".c5-nav1-i2").text("30 مل (2 ملعقة كبيرة) ماء مغلي");
+        $(".c5-nav1-i3").text("110 مل حليب بارد نصف منزوع الدسم");
+        $(".c5-nav1-i4").text("7 مكعبات ثلج متوسط");
+        $(".c5-nav1-i5").text("2 ملعقة صغيرة (10 مل) سكر بني (اختياري)");
+        $(".c5-nav3-s1").text("اخلطي القهوة الفورية مع الماء الساخن. أضف السكر إذا كنت تستخدمه. يقلب جيدا ويوضع جانبا.");
+        $(".c5-nav3-s2").text("املأ كوبًا بمكعبات الثلج.");
+        $(".c5-nav3-s3").text("اسكب القهوة ببطء.");
+        $(".c5-nav3-s4").text("تدفق ببطء في الحليب.");
+        $(".c6-d").text("مشروب حلو مع نكهات غنية من الكراميل ، ونكهات نسكافيه الجريئة والمنشطة.");
+        $(".c6-nav1-i1").text("1-2 ملعقة صغيرة (2-4 جم) قهوة نسكافيه سريعة التحضير");
+        $(".c6-nav1-i2").text("30 مل (2 ملعقة كبيرة) ماء مغلي");
+        $(".c6-nav1-i3").text("130 مل حليب نصف دسم");
+        $(".c6-nav1-i4").text("15 مل صلصة كراميل خالية من السكر");
+        $(".c6-nav1-i5").text("1 ملعقة كبيرة كريمة مخفوقة (اختياري)");
+        $(".c6-nav3-s1").text("اخلطي القهوة الفورية مع الماء الساخن. يقلب جيدا ويوضع جانبا.");
+        $(".c6-nav3-s2").text("يُمزج الحليب وصلصة الكراميل في وعاء زجاجي. سخنيها لمدة دقيقة في الميكروويف ، حتى تظهر الفقاعات. قلبيها لخلطها بشكل صحيح.");
+        $(".c6-nav3-s3").text("أضف القهوة إلى حليب الكراميل. قم برغوة الرغوة لمدة 30 ثانية باستخدام جهاز الرغوة المحمول باليد للحصول على ملمس مخملي مثالي.");
+        $(".c6-nav3-s4").text("اسكب لاتيه الكراميل المملح في كوبك.");
+        // section 4
+        $(".r-faq").text("أسئلة مكررة");
+
+        // about page
+        //  section 1
+        $(".about-greet").text("قصة نسكافيه");
+        $(".about-p1").text("قهوة رائعة منذ عام 1938");
+        // section 2
+        $(".about-title").text("حول نسكافيه");
+        $(".about-p2").text("كان متخصص القهوة لدينا ، Max Morgenthaler ، في مهمة صنع فنجان قهوة لذيذ ببساطة عن طريق إضافة الماء. عمل ماكس وفريقه بجد لإيجاد طريقة جديدة لصنع القهوة سريعة التحضير تحافظ على النكهة الطبيعية للقهوة. في عام 1938 ، وجدا الإجابة ، وولدت نسكافيه. سميت باستخدام الأحرف الثلاثة الأولى في نستله وملحقها بالمقهى ، أصبحت NESCAFÉ الاسم الجديد في القهوة.");
+        // section 3
+        $(".caption").text("القهوة المفضلة في العالم");
+
+        // contact page
+        $(".name-l").text("اسم");
+        $(".email-l").text("البريد الإلكتروني");
+        $(".send-btn").text("إرسال");
+    });
+});
+
 //Spanish
 $(function() {
-    $(".fil").click(function() {
+    $(".es").click(function() {
         //top-menu
         $(".language-selected").text("es");
         $(".sign-in").text("REGISTRARSE");
@@ -284,7 +452,7 @@ $(function() {
         $(".c2-d").text("Esta sencilla y deliciosa receta tendrá un capuchino en su taza sin una máquina de café, solo el sabor fuerte de NESCAFÉ.");
         $(".c2-nav1-i1").text("1-2 cucharaditas (2-4 g) de NESCAFÉ Original");
         $(".c2-nav1-i2").text("30 ml (2 cucharadas) de agua recién hervida");
-        $(".c2-nav1-i3").text("190ml leche semidesnatada");
+        $(".c2-nav1-i3").text("190 ml leche semidesnatada");
         $(".c2-nav1-i4").text("Nuez moscada, canela o cacao en polvo (opcional)");
         $(".nav2-glassc").text("Contenedor de vidrio");
         $(".nav2-milkfr").text("Vaporizador de leche");
@@ -620,7 +788,7 @@ $(function() {
         $(".nav1").text("材料");
         $(".nav2").text("必須");
         $(".nav3").text("手順");
-        $(".c1-nav1-i1").text("200mlの沸かしたてのお湯で淹れたネスカフェ アゼラ クラフトコーヒー小さじ2～3杯");
+        $(".c1-nav1-i1").text("200 mlの沸かしたてのお湯で淹れたネスカフェ アゼラ クラフトコーヒー小さじ2～3杯");
         $(".c1-nav1-i2").text("バニラアイスクリーム 2スクープ（乳製品を含まない代替品で代用可能）（牛乳を含む）");
         $(".c1-nav1-i3").text("刻んだチョコレートまたはすりおろしたチョコレート 1 ピース");
         $(".c1-nav2-r1").text("小刀");

@@ -109,6 +109,13 @@ body {
         z-index: 1;
     }
 
+    .dropdown-menu{
+        max-height: 115px; 
+        overflow-y: scroll; 
+        min-width: 100% !important; 
+        -attachment: local, local, scroll, scroll;
+    }
+
     .language-selected{
         width: 40px;
     }

@@ -99,6 +99,12 @@ body .top-menu {
   width: 280px;
   z-index: 1;
 }
+body .dropdown-menu {
+  max-height: 115px;
+  overflow-y: scroll;
+  min-width: 100% !important;
+  -attachment: local, local, scroll, scroll;
+}
 body .language-selected {
   width: 40px;
 }
