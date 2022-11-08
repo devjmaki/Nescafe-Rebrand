@@ -118,7 +118,7 @@
 
                 p{  
                     color: $accent-color;
-                    margin: 2.5rem 0;
+                    margin: $margin-ms 0;
                     text-transform: uppercase;
                     font-size: 1.2vw;
                 }
@@ -251,12 +251,12 @@
                     font-family: $Zen-Antique;
                     font-size: 3vw;
                     line-height: $spacing-sm;
-                    margin-bottom: 2.5rem;
+                    margin-bottom: $margin-ms;
                 }
 
                 .recipe-sub{
                     font-size: 2vw;
-                    margin-bottom: 3rem;
+                    margin-bottom: $margin-mm;
                 }
 
                 .recipe-p{
@@ -370,7 +370,7 @@
                     }
 
                     h1, p{
-                       line-height: 2.5rem;
+                       line-height: $margin-ms;
                     }
 
                     .direction{
@@ -548,7 +548,7 @@
                     width: 100%;
     
                     h1, p{
-                       line-height: 3rem;
+                       line-height: $spacing-mm;
                     }
 
                     .direction{

@@ -25,7 +25,7 @@
                 p{
                     font-size: 5vw;
                     line-height: 4rem;
-                    margin-left: 3rem;
+                    margin-left: $margin-mm;
                 }
 
                 label{
@@ -177,7 +177,7 @@
     
                     p{
                         font-size: 5vw;
-                        line-height: 3rem;
+                        line-height: $spacing-mm;
                         margin-left: $margin-ssm;
                     }
     

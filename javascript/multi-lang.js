@@ -155,6 +155,12 @@ $(function() {
         $(".c6-nav3-s4").text("Pour the Salted Caramel Latte into your cup. ");
         // section 4
         $(".r-faq").text("Frequently Asked Questions");
+        $("#headingOne").text("How do you make really good coffee?");
+        $(".a1").text("With NESCAFÉ it's easy. Take a look through our list of easy, at-home coffee recipes, give them a try, and you'll be on your way to finding your favourite way to enjoy NESCAFÉ. It's all about personal taste, and your new favourite might be waiting to be discovered. Give it a try and taste for yourself.");
+        $("#headingTwo").text("What are good coffee-based drinks to make at home?");
+        $(".a2").text("There are so many coffee recipes to try making at home. You could try making a simple instant cappuccino, a caramel latte, or even a quick iced coffee to get yourself comfortable. Your new favourite coffee recipe is waiting for you to try it.");
+        $("#headingThree").text("What can I put in my coffee?");
+        $(".a3").text("It is all about personal taste. You can add milk, or a plant-based alternative like oat drink to soften the bold flavours slightly. Since coffee is such a versatile drink, it works well with a lot of different flavours, so why not add a little sugar-free flavoured syrup to your coffee? Experiment with your favourite flavours and find out what works best for you.");
 
         // about page
         //  section 1
@@ -332,6 +338,13 @@ $(function() {
         $(".c6-nav3-s4").text("اسكب لاتيه الكراميل المملح في كوبك.");
         // section 4
         $(".r-faq").text("أسئلة مكررة");
+        $("#headingOne").text("كيف تصنع قهوة جيدة حقا؟");
+        $(".a1").text("مع NESCAFÉ الأمر سهل. ألقِ نظرة على قائمتنا لوصفات القهوة السهلة في المنزل ، وجربها ، وستكون في طريقك لإيجاد طريقتك المفضلة للاستمتاع بنسكافيه. الأمر كله يتعلق بالذوق الشخصي ، وقد تكون مفضلتك الجديدة في انتظار من يكتشفها. جربها وتذوقها بنفسك.");
+        $("#headingTwo").text("ما هي المشروبات الجيدة التي تحتوي على القهوة لصنعها في المنزل؟");
+        $(".a2").text("هناك الكثير من وصفات القهوة التي يمكنك تجربتها في المنزل. يمكنك تجربة صنع كابتشينو سريع التحضير بسيط أو لاتيه بالكراميل أو حتى قهوة مثلجة سريعة لتشعر بالراحة. وصفة القهوة الجديدة المفضلة لديك في انتظارك لتجربتها.");
+        $("#headingThree").text("ماذا يمكنني أن أضع في قهوتي؟");
+        $(".a3").text("الأمر كله يتعلق بالذوق الشخصي. يمكنك إضافة الحليب ، أو بديل نباتي مثل شراب الشوفان لتليين النكهات الجريئة قليلاً. نظرًا لأن القهوة مشروب متعدد الاستخدامات ، فهي تعمل جيدًا مع الكثير من النكهات المختلفة ، فلماذا لا تضيف القليل من شراب النكهة الخالية من السكر إلى قهوتك؟ جرب النكهات المفضلة لديك واكتشف الأفضل بالنسبة لك.");
+
 
         // about page
         //  section 1
@@ -507,6 +520,12 @@ $(function() {
         $(".c6-nav3-s4").text("Vierta el Latte de caramelo salado en su taza. ");
         // section 4
         $(".r-faq").text("Preguntas Frecuentes");
+        $("#headingOne").text("¿Cómo se hace un café realmente bueno?");
+        $(".a1").text("Con NESCAFÉ es fácil. Eche un vistazo a nuestra lista de recetas fáciles de café caseras, pruébelas y estará en camino de encontrar su forma favorita de disfrutar NESCAFÉ. Se trata de gustos personales, y tu nuevo favorito podría estar esperando a ser descubierto. Pruébalo y pruébalo por ti mismo.");
+        $("#headingTwo").text("¿Cuáles son buenas bebidas a base de café para hacer en casa?");
+        $(".a2").text("Hay tantas recetas de café para tratar de hacer en casa. Podría intentar hacer un capuchino instantáneo simple, un café con leche con caramelo o incluso un café helado rápido para sentirse cómodo. Tu nueva receta de café favorita te está esperando para que la pruebes.");
+        $("#headingThree").text("¿Qué puedo poner en mi café?");
+        $(".a3").text("Se trata de gusto personal. Puede agregar leche o una alternativa a base de plantas como la bebida de avena para suavizar ligeramente los sabores audaces. Dado que el café es una bebida tan versátil, funciona bien con muchos sabores diferentes, entonces, ¿por qué no agregar un poco de jarabe saborizado sin azúcar a su café? Experimente con sus sabores favoritos y descubra qué funciona mejor para usted.");
 
         // about page
         //  section 1
@@ -683,6 +702,12 @@ $(function() {
         $(".c6-nav3-s4").text("Versez le Latte Caramel Salé dans votre tasse. ");
         // section 4
         $(".r-faq").text("Questions fréquemment posées");
+        $("#headingOne").text("Comment faire un très bon café ?");
+        $(".a1").text("Avec NESCAFÉ, c'est facile. Jetez un coup d'œil à notre liste de recettes de café maison faciles, essayez-les et vous serez sur la bonne voie pour trouver votre façon préférée de profiter de NESCAFÉ. Tout est une question de goût personnel, et votre nouveau favori attend peut-être d'être découvert. Essayez-le et goûtez par vous-même.");
+        $("#headingTwo").text("Quelles sont les bonnes boissons à base de café à faire à la maison ?");
+        $(".a2").text("Il y a tellement de recettes de café à essayer de faire à la maison. Vous pouvez essayer de préparer un simple cappuccino instantané, un latte au caramel ou même un café glacé rapide pour vous mettre à l'aise. Votre nouvelle recette de café préférée vous attend pour l'essayer.");
+        $("#headingThree").text("Que puis-je mettre dans mon café ?");
+        $(".a3").text("Tout est question de goût personnel. Vous pouvez ajouter du lait ou une alternative à base de plantes comme la boisson à l'avoine pour adoucir légèrement les saveurs audacieuses. Étant donné que le café est une boisson si polyvalente, il fonctionne bien avec de nombreuses saveurs différentes, alors pourquoi ne pas ajouter un peu de sirop aromatisé sans sucre à votre café ? Expérimentez avec vos saveurs préférées et découvrez ce qui vous convient le mieux.");
 
         // about page
         //  section 1
@@ -856,6 +881,12 @@ $(function() {
         $(".c6-nav3-s4").text("塩キャラメルラテをカップに注ぎます。");
         // section 4
         $(".r-faq").text("よくある質問");
+        $("#headingOne").text("本当に美味しいコーヒーを淹れるには？");
+        $(".a1").text("ネスカフェなら簡単です。 自宅で簡単にできるコーヒー レシピのリストをご覧になり、試してみてください。お気に入りのネスカフェの楽しみ方を見つけることができます。 それはすべて個人的な好みの問題であり、あなたの新しいお気に入りが発見されるのを待っているかもしれません. 自分で試してみてください。");
+        $("#headingTwo").text("自宅で作るのに適したコーヒーベースの飲み物は何ですか?");
+        $(".a2").text("自宅で作ってみたくなるコーヒーのレシピがたくさんあります。 簡単なインスタント カプチーノ、キャラメル ラテ、または簡単なアイス コーヒーを作って、快適に過ごすことができます。 あなたの新しいお気に入りのコーヒー レシピは、あなたが試してみるのを待っています。");
+        $("#headingThree").text("コーヒーには何を入れることができますか?");
+        $(".a3").text("それはすべて個人的な好みに関するものです。 ミルク、またはオート麦ドリンクのような植物ベースの代替品を追加して、大胆なフレーバーをわずかに和らげることができます. コーヒーは非常に用途の広い飲み物であるため、さまざまなフレーバーによく合います。コーヒーに無糖のフレーバーシロップを少し加えてみませんか? お気に入りのフレーバーを試して、自分に最適なものを見つけてください。");
 
         // about page
         //  section 1

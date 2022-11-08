@@ -15,13 +15,13 @@
             #login{
                 width: 35%;
                 height: 460px;
-                margin: 2.5rem;
+                margin: $margin-ms;
                 border-radius: 5px;
                 background-color: $primary-color;
                 box-shadow: 0 4px 8px 0 rgba(rgb(255, 255, 255), 0.2), 0 6px 20px 0 rgba(white, 0.19);
                 
                 .form-content{
-                    margin: 3rem 2.5rem;
+                    margin: $margin-mm $margin-ms;
                 }
                 
                 .input-group:last-of-type{
@@ -72,7 +72,7 @@
                     height: 1px;    
                     position: absolute;
                     width: 27%;
-                    margin-left: 2.5rem;
+                    margin-left: $margin-ms;
                     margin-top: $margin-s;      
                     z-index: 1;
                     border: 0;
@@ -82,7 +82,7 @@
             
                 h2{
                     font-size: 0.8rem;
-                    margin-top: 2.5rem;
+                    margin-top: $margin-ms;
                 }
             
                 .alt{

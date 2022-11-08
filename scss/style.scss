@@ -62,7 +62,7 @@ body {
         position: absolute;
         top: 360px;
         left: 12px;
-        width: 3rem;
+        width: $margin-mm;
         height: $font-size-ssm;
         &:hover{
             opacity: 0.5;
@@ -102,7 +102,7 @@ body {
 
     .top-menu{
         position: fixed;
-        margin-left: 75%;
+        margin-left: 78%;
         margin-top: 2%;
         height: 8%;
         width: 280px;
@@ -181,10 +181,21 @@ body {
         }
     }
 
-    .navbar-icons{
-        width: $quarter-pc;
-        height: auto;
-        margin-left: $margin-sm;
+    .page-tag{
+        transform: rotate(-90deg);
+        font-size: 1.2vw;
+        letter-spacing: $spacing-xs;
+        margin-bottom: 3.5rem;
+        margin-right: $margin-xs;
+
+        a{
+            text-decoration: none;
+            color: $tertiary-color;
+            cursor: pointer;
+            &:hover{
+                color: $text-color-light;
+            }
+        }
     }
 
     .side-border{
@@ -426,12 +437,12 @@ body {
     body{
         .hamburger{
             top: 48%;
-            left: 6px;
+            left: 13px;
         }
 
         .navbar-brand{
-            width: 85%;
-            margin-left: 0.1rem;
+            width: 90%;
+            margin-left: 0.2rem;
         }
     } 
 }

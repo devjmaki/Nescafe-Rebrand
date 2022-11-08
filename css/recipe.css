@@ -157,6 +157,9 @@
   font-size: 3vw;
   margin-bottom: 2rem;
 }
+.recipe-container section:nth-of-type(4) h4 {
+  font-size: 1.5vw;
+}
 .recipe-container section:nth-of-type(5) {
   background-color: #0a0908;
   color: #fff;

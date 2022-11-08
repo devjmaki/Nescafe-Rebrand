@@ -55,7 +55,7 @@
 
                 p{  
                     color: $accent-color;
-                    margin: 2.5rem 0;
+                    margin: $margin-ms 0;
                     text-transform: uppercase;
                     font-size: 1.2vw;
                 }
@@ -172,6 +172,10 @@
             h3{
                 font-size: 3vw;
                 margin-bottom: $margin-ssm;
+            }
+
+            h4{
+                font-size: 1.5vw;
             }
         }
 
