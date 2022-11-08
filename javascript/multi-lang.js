@@ -5,8 +5,9 @@ $(function() {
         $(".language-selected").text("en-US");
         $(".sign-in").text("SIGN IN");
         $(".language-selected").removeClass("change-es");
+        $(".language-selected").removeClass("change-fr");
         $(".language-selected").removeClass("change-ja");
-        $(".language-selected").addClass("change-fr");
+        $(".language-selected").addClass("change-en");
         //offcanvas
         $(".offcanvas-title").text("Shopping Cart");
         $(".delivery-txt").text("Delivery");
@@ -181,6 +182,190 @@ $(function() {
     });
 });
 
+//Spanish
+$(function() {
+    $(".fil").click(function() {
+        //top-menu
+        $(".language-selected").text("es");
+        $(".sign-in").text("REGISTRARSE");
+        $(".language-selected").removeClass("change-fr");
+        $(".language-selected").removeClass("change-en");
+        $(".language-selected").removeClass("change-ja");
+        $(".language-selected").addClass("change-es");
+        //offcanvas
+        $(".offcanvas-title").text("Carrito de compras");
+        $(".delivery-txt").text("Entrega");
+        $(".delivery-price").text("€0");
+        $(".total-txt").text("Total");
+        $(".total-price").text("€ 0.00");
+        $("#check-out").text("Pagar");
+        $("#shop").text("Seguir comprando");
+
+        // login
+        $(".pass").text("Has Olvidado Tu Contraseña");
+        $(".login-btn").text("Acceso");
+        $(".reset-btn").text("Reiniciar");
+        $(".alt-login").text("Iniciar Sesión Usando");
+        
+        // landing page
+        //section 1
+        $("#title").text("DESCUBRE UN SABOR MÁS RICO");
+        $("#sub-title").text("Café más sabroso, nuevo Nescafé");
+        $(".direction").text("Saber Más");
+        // section 2
+        $(".overview-title").text("La promesa de oro puro.");
+        $(".overview-sub").text("Experimente el sabor inigualable de la Roastery.");
+        $(".overview-p").text("NESCAFÉ GOLD BLEND Roastery Collection es una gama de tres nuevos cafés instantáneos premium para bebedores de café que buscan un café refinado y de alta calidad en casa. Cada una de las nuevas mezclas ha sido elaborada por los maestros tostadores de NESCAFÉ GOLD BLEND y le brinda la oportunidad de experimentar el sabor refinado del café tostado por expertos desde la comodidad de su hogar. ");
+        $(".shop-btn").text("Compra Ahora");
+        // section 3
+        $(".sec3-p").text("Para las amantes del café.");
+        // section 4
+        $("#brand1").text("NESCAFÉ");
+        $("#brand2").text("GOLD");
+        $("#brand3").text("BLEND");
+        $(".lr-coffee").text("ASADO LIGERO");
+        $(".dr-coffee").text("TOSTADO OSCURO");
+        $(".lrd-coffee").text("DESAFÍO DE TOSTADO CLARO");
+        // section 5    
+        $(".recipe-title").text("COLECCIÓN Roastery");
+        $(".recipe-sub").text("PARA CADA EXPERIENCIA");
+        $(".recipe-p").text("Desde batidos deliciosamente fríos hasta cócteles suaves y aterciopelados, intente hacer sus recetas favoritas de café NESCAFÉ en casa y comparta una instantánea de sus creaciones usando el hashtag #NescaféRecipes.");
+        $(".recipe-btn").text("Ver todas las recetas");
+        // section 7
+        $(".footer-title").text("¿Te gusta lo que ves? ¡Ven, bebe con nosotros!");
+        $(".contact-btn").text("Hablemos");
+        $(".home-menu").text("HOGAR");
+        $(".shop-menu").text("CAFÉS");
+        $(".recipe-menu").text("RECETAS");
+        $(".about-menu").text("SOBRE NOSOTRAS");
+        $(".contact-menu").text("CONTÁCTENOS");
+        $(".newsletter").text("BOLETIN INFORMATIVO");
+        $(".sub-btn").text("SUSCRIBIR");
+
+        // shop page
+        $(".gb-coffee").text("MEZCLA DE ORO");
+        $("#ngBrand").text("NESCAFÉ Mezcla Dorada");
+        $(".sc-coffee").text("Café Suave");
+        $(".ie-coffee").text("Expreso instantáneo");
+        $(".nd-coffee").text("NON-DAIRY");
+        $(".cl-coffee").text("Latte de coco");
+        $(".ol-coffee").text("Latte de avena");
+        $(".add-btn").text("Añadir al carrito");
+
+        // recipes page
+        // section 1
+        $(".sec1-p").text("Recetas De Café");
+        // section 2
+        $(".recipe-overview").text("Comparte el sabor de la amistad.");
+        $(".recipe-op").text("Si ha estado buscando por todas partes las mejores recetas de café para hacer en casa, está en el lugar correcto. Tenemos algo para todos: recetas de café caliente para esos días fríos, lluviosos e invernales, recetas de café helado para los sofocantes días calurosos de verano, un café relajado y fácil de beber para una tarde dorada o un café fuerte y rico para esa madrugada.");
+        // section3
+        $(".c1-recipe").text("AFOGADO");
+        $(".c2-recipe").text("CAPUCHINO");
+        $(".c3-recipe").text("MOCHA DE CAFÉ HELADO");
+        $(".c4-recipe").text("MOCHA FRAPÉ");
+        $(".c5-recipe").text("MOUSSE DE MOCA");
+        $(".c6-recipe").text("LATTE DE CARAMELO SALADO");
+        $(".view-btn").text("Ver la receta");
+        $(".c1-d").text("Affogato significa 'ahogado' en italiano, lo que se debe a que el helado está cubierto con un espresso. Un verdadero placer para la multitud que es fácil de hacer!");
+        $(".c-time").text("Preparación: 5 minutos.");
+        $(".nav1").text("Ingredientes");
+        $(".nav2").text("Requerida");
+        $(".nav3").text("Pasos");
+        $(".c1-nav1-i1").text("2-3 cucharaditas de café artesanal NESCAFÉ AZERA preparado con 200 ml de agua recién hervida");
+        $(".c1-nav1-i2").text("2 bolas de helado de vainilla (se puede sustituir por una alternativa sin lácteos) (Contiene leche)");
+        $(".c1-nav1-i3").text("1 trozo de chocolate troceado o rallado");
+        $(".c1-nav2-r1").text("Cuchillo pequeño");
+        $(".c1-nav2-r2").text("Cuchara o cuchara para helado");
+        $(".nav-2glasses").text("2 vasos, para servir");
+        $(".nav2-allergy").text("Alérgenos en esta receta: Leche");
+        $(".c1-nav3-s1").text("En una copa o plato de postre frío, colocar una bola de helado de vainilla.");
+        $(".c1-nav3-s2").text("Vierta lentamente el café artesanal NESCAFÉ AZERA recién preparado sobre el helado..");
+        $(".c1-nav3-s3").text("Decorar con chocolate troceado y servir inmediatamente..");
+        $(".c2-d").text("Esta sencilla y deliciosa receta tendrá un capuchino en su taza sin una máquina de café, solo el sabor fuerte de NESCAFÉ.");
+        $(".c2-nav1-i1").text("1-2 cucharaditas (2-4 g) de NESCAFÉ Original");
+        $(".c2-nav1-i2").text("30 ml (2 cucharadas) de agua recién hervida");
+        $(".c2-nav1-i3").text("190ml leche semidesnatada");
+        $(".c2-nav1-i4").text("Nuez moscada, canela o cacao en polvo (opcional)");
+        $(".nav2-glassc").text("Contenedor de vidrio");
+        $(".nav2-milkfr").text("Vaporizador de leche");
+        $(".nav2-mug").text("Taza, para servir");
+        $(".c2-nav3-s1").text("Mezcle el café instantáneo y el agua recién hervida. Revuelva bien y viértalo en la taza de su elección.");
+        $(".c2-nav3-s2").text("Calienta la leche en un recipiente de cristal durante 1 minuto en el microondas y revuélvela una vez que se haya calentado.");
+        $(".c2-nav3-s3").text("Espume la leche caliente durante 2 minutos con un vaporizador de mano. Su objetivo es una capa de espuma de 2 dedos de grosor, 35 mm, para ser precisos.");
+        $(".c2-nav3-s4").text("Vierta la leche espumada en el café.");
+        $(".c2-nav3-s5").text("Espolvorea con nuez moscada, canela o cacao y sirve de inmediato.");
+        $(".c3-d").text("Create a wonderfully tasty drink with our iced cafe mocha recipe. Perfect for your morning coffee break or as an afternoon treat.");
+        $(".c3-nav1-i1").text("6tsp NESCAFÉ GOLD BLEND brewed with 200ml of freshly boiled water");
+        $(".c3-nav1-i2").text("200ml semi-skimmed milk or dairy-free alternative");
+        $(".c3-nav1-i3").text("50g white chocolate chopped or white chocolate buttons (contains milk)");
+        $(".c3-nav1-i4").text("2tbsp lightly whipped cream (optional)");
+        $(".c3-nav1-i5").text("Nutmeg");
+        $(".c3-nav2-r2").text("Heavy bottom pot");
+        $(".c3-nav2-r3").text("Whisk");
+        $(".c3-nav2-r4").text("Small grater");
+        $(".c3-nav2-r5").text("2 mugs, to serve");
+        $(".c3-nav3-s1").text("Add the milk and the white chocolate chips to a heavy bottom pot. Whisk together, on medium-low heat, until the white chocolate has melted.");
+        $(".c3-nav3-s2").text("Add your freshly brewed NESCAFÉ GOLD BLEND to a cup or mug. Top up with the white chocolate milk and stir.");
+        $(".c3-nav3-s3").text("If using top with lightly whipped cream and freshly grate nutmeg over the top. ");
+        $(".c4-d").text("There's nothing better than a cooling mocha frappé on a hot day, so why not make your own? You can even add a dollop of cream for a perfectly sweet taste.");
+        $(".c4-nav1-i1").text("4-8tsp NESCAFÉ AZERA My Way Latte brewed with 400ml of freshly boiled water and left to cool");
+        $(".c4-nav1-i2").text("100ml semi-skimmed milk or dairy-free alternative");
+        $(".c4-nav1-i3").text("2tbsp sugar syrup (mix 2tbsp sugar with 1tbsp boiling water, bring to the boil and stir until dissolved)");
+        $(".c4-nav1-i4").text("2 handfuls ice cubes");
+        $(".c4-nav1-i5").text("2tbsp lightly whipped cream (optional)");
+        $(".c4-nav2-r1").text("Blender");
+        $(".c4-nav3-s1").text("Add all the ingredients apart from the cream to a blender.");
+        $(".c4-nav3-s2").text("Blend until foamy and the ice is broken down completely.");
+        $(".c4-nav3-s3").text("Pour into a glass and spoon over the lightly whipped cream if using.");
+        $(".c5-d").text("Stay cool! Our NESCAFÉ Mocha Mousse will refresh your body, mind, and soul.");
+        $(".c5-nav1-i1").text("1-2 tsps (2-4g) NESCAFÉ GOLD BLEND");
+        $(".c5-nav1-i2").text("30ml (2 tbsps) freshly boiled water");
+        $(".c5-nav1-i3").text("110ml cold semi-skimmed milk");
+        $(".c5-nav1-i4").text("7 medium ice cubes");
+        $(".c5-nav1-i5").text("2 tsps (10ml) brown sugar (optional)");
+        $(".c5-nav3-s1").text("Mix the instant coffee with the hot water. Add the sugar, if you are using it. Stir it well and set it aside.");
+        $(".c5-nav3-s2").text("Fill a glass with ice cubes.");
+        $(".c5-nav3-s3").text("Slowly pour in the coffee.");
+        $(".c5-nav3-s4").text("Slowly stream in the milk.");
+        $(".c6-d").text("An indulgently sweet drink with rich aromas of caramel, and the bold, invigorating flavours of NESCAFÉ.");
+        $(".c6-nav1-i1").text("1-2 tsps (2-4g) NESCAFÉ instant coffee");
+        $(".c6-nav1-i2").text("30ml (2 tbsps) freshly boiled water");
+        $(".c6-nav1-i3").text("130ml semi-skimmed milk");
+        $(".c6-nav1-i4").text("15ml sugar free caramel sauce");
+        $(".c6-nav1-i5").text("1 tbsp whipped cream (optional)");
+        $(".c6-nav3-s1").text("Mix the instant coffee with the hot water. Stir it well and set it aside.");
+        $(".c6-nav3-s2").text("Combine the milk and caramel sauce in a glass container. Heat it for 1 minute in a microwave, until bubbles just appear. Give it a stir to mix it properly.");
+        $(".c6-nav3-s3").text("Add the coffee brew to the caramel milk. Froth it for 30 seconds with a handheld frother to get the perfect velvety texture.");
+        $(".c6-nav3-s4").text("Pour the Salted Caramel Latte into your cup. ");
+        // section 4
+        $(".r-faq").text("Frequently Asked Questions");
+        $("#headingOne").text("How do you make really good coffee?");
+        $(".a1").text("With NESCAFÉ it's easy. Take a look through our list of easy, at-home coffee recipes, give them a try, and you'll be on your way to finding your favourite way to enjoy NESCAFÉ. It's all about personal taste, and your new favourite might be waiting to be discovered. Give it a try and taste for yourself.");
+        $("#headingOne").text("How do you make really good coffee?");
+        $(".a1").text("With NESCAFÉ it's easy. Take a look through our list of easy, at-home coffee recipes, give them a try, and you'll be on your way to finding your favourite way to enjoy NESCAFÉ. It's all about personal taste, and your new favourite might be waiting to be discovered. Give it a try and taste for yourself.");
+        $("#headingTwo").text("What are good coffee-based drinks to make at home?");
+        $(".a2").text("There are so many coffee recipes to try making at home. You could try making a simple instant cappuccino, a caramel latte, or even a quick iced coffee to get yourself comfortable. Your new favourite coffee recipe is waiting for you to try it.");
+        $("#headingThree").text(" What can I put in my coffee?");
+        $(".a3").text("It is all about personal taste. You can add milk, or a plant-based alternative like oat drink to soften the bold flavours slightly. Since coffee is such a versatile drink, it works well with a lot of different flavours, so why not add a little sugar-free flavoured syrup to your coffee? Experiment with your favourite flavours and find out what works best for you.");
+
+        // about page
+        //  section 1
+        $(".about-greet").text("THE NESCAFÉ STORY");
+        $(".about-p1").text("Great Coffee since 1938");
+        // section 2
+        $(".about-title").text("About NESCAFÉ");
+        $(".about-p2").text("In 1929, Nestlé was challenged to help preserve the surplus coffee beans in Brazil that resulted from the Wall Street Crash. And Nestlé accepted the challenge.");
+        $(".about-p3").text("Our coffee specialist, Max Morgenthaler, was on a mission to create a delicious cup of coffee simply by adding water. Max and his team worked hard to find a new way to make instant coffee that would retain the coffee’s natural flavour. In 1938, they found the answer, and NESCAFÉ was born. Named by using the first three letters in Nestlé and suffixing it with ‘café’, NESCAFÉ became the new name in coffee.");
+        // section 3
+        $(".caption").text("World's Favorite Coffee");
+
+        // contact page
+        $(".name-l").text("NAME");
+        $(".email-l").text("EMAIL");
+        $(".send-btn").text("Send");
+    });
+});
+
 //French
 $(function() {
     $(".fr").click(function() {
@@ -188,6 +373,7 @@ $(function() {
         $(".language-selected").text("fr");
         $(".sign-in").text("CONNEXION");
         $(".language-selected").removeClass("change-en");
+        $(".language-selected").removeClass("change-es");
         $(".language-selected").removeClass("change-ja");
         $(".language-selected").addClass("change-fr");
         //offcanvas
@@ -362,8 +548,9 @@ $(function() {
         //top-menu
         $(".language-selected").text("ja");
         $(".sign-in").text("サインイン");
-        $(".language-selected").removeClass("change-fr");
         $(".language-selected").removeClass("change-en");
+        $(".language-selected").removeClass("change-es");
+        $(".language-selected").removeClass("change-fr");
         $(".language-selected").addClass("change-ja");
         //offcanvas
         $(".offcanvas-title").text("ショッピングカート");
