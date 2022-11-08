@@ -52,16 +52,27 @@
   color: #fff;
   mix-blend-mode: soft-light;
 }
-.shop-container section:nth-of-type(1) .item-label {
-  position: absolute;
-  top: 62%;
-  left: 67%;
+.shop-container section:nth-of-type(1) .lrd-coffee {
+  top: 33%;
 }
-.shop-container section:nth-of-type(1) .item-label h3 {
+.shop-container section:nth-of-type(1) .item-label-tin, .shop-container section:nth-of-type(1) .item-label-gb, .shop-container section:nth-of-type(1) .item-label-nd {
+  position: absolute;
+  top: 65%;
+}
+.shop-container section:nth-of-type(1) .item-label-tin h3, .shop-container section:nth-of-type(1) .item-label-gb h3, .shop-container section:nth-of-type(1) .item-label-nd h3 {
   font-size: 2vw;
 }
-.shop-container section:nth-of-type(1) .item-label button {
+.shop-container section:nth-of-type(1) .item-label-tin button, .shop-container section:nth-of-type(1) .item-label-gb button, .shop-container section:nth-of-type(1) .item-label-nd button {
   margin-top: 1.5rem;
+}
+.shop-container section:nth-of-type(1) .item-label-tin {
+  left: 64%;
+}
+.shop-container section:nth-of-type(1) .item-label-gb {
+  left: 60%;
+}
+.shop-container section:nth-of-type(1) .item-label-nd {
+  left: 63%;
 }
 .shop-container section:nth-of-type(1) #prev {
   width: 60px;

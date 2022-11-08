@@ -415,7 +415,7 @@ $(function() {
         $("#ngBrand").text("NESCAFÉ Mezcla Dorada");
         $(".sc-coffee").text("Café Suave");
         $(".ie-coffee").text("Expreso instantáneo");
-        $(".nd-coffee").text("NON-DAIRY");
+        $(".nd-coffee").text("NO LÁCTEO");
         $(".cl-coffee").text("Latte de coco");
         $(".ol-coffee").text("Latte de avena");
         $(".add-btn").text("Añadir al carrito");

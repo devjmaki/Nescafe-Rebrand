@@ -45,11 +45,14 @@
                 color: $text-color-light;
                 mix-blend-mode: soft-light;
             }
+
+            .lrd-coffee{
+                top: 33%;
+            }
             
-            .item-label{
+            .item-label-tin, .item-label-gb, .item-label-nd{
                 position: absolute;
-                top: 62%;
-                left: 67%;
+                top: 65%;
 
                 h3{
                     font-size: 2vw;
@@ -58,6 +61,18 @@
                 button{
                     margin-top: $margin-sm;
                 }
+            }
+
+            .item-label-tin{
+                left: 64%;
+            }
+
+            .item-label-gb{
+                left: 60%;
+            }
+
+            .item-label-nd{
+                left: 63%;
             }
 
             #prev{
